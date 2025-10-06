@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
