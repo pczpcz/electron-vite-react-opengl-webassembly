@@ -66,18 +66,30 @@ body {
     text-align: center;
 }
 
-.sdl-canvas {
+#canvas {
     border: 1px solid #444;
     cursor: pointer;
     display: block;
-    margin: 0 auto;
+    width: 100%;
+    height: 100%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease;
 }
 
-.sdl-canvas:hover {
+#canvas:hover {
     border-color: #61dafb;
     box-shadow: 0 6px 16px rgba(97, 218, 251, 0.3);
+}
+
+.canvas-container {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+    border: 2px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #252526;
 }
 
 .info-panel {

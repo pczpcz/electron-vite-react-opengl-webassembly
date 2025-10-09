@@ -11,7 +11,7 @@ import wasmJsUrl from './build_emscripten/OpenglWebTest.js?url';
 function App() {
     // 使用useRef来引用canvas元素
     const canvasRef = useRef(null);
-    
+
     // 使用useEffect动态加载OpenglWebTest.js并配置Module
     useEffect(() => {
         if (canvasRef.current) {
@@ -81,12 +81,13 @@ function App() {
             
             document.body.appendChild(wasmScript);
             
+            
+            
             // 清理函数
             return () => {
                 if (document.body.contains(configScript)) {
                     document.body.removeChild(configScript);
                 }
-                // 注意：我们不移除WASM脚本，因为它包含全局状态
             };
         }
     }, []);
@@ -94,11 +95,13 @@ function App() {
     return (
         <>
             <h1>ldjlsjlflsj</h1>
-            <canvas 
-                ref={canvasRef}
-                id="canvas"
-                onContextMenu={(e) => e.preventDefault()}
-            ></canvas>
+            <div className="canvas-container">
+                <canvas 
+                    ref={canvasRef}
+                    id="canvas"
+                    onContextMenu={(e) => e.preventDefault()}
+                ></canvas>
+            </div>
         </>
     );
 }

@@ -23,10 +23,10 @@ if(EMSCRIPTEN)
 
     # 设置Emscripten编译选项
     if(CMAKE_BUILD_TYPE STREQUAL "Debug")
-        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -O0 -g -s USE_SDL=2")
+        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -O0 -g -s USE_WEBGL2=1 -s USE_GLFW=3")
         message(STATUS "Building in Debug mode")
     else()
-        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -O3 -s USE_SDL=2 -s FORCE_FILESYSTEM=1")
+        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -O3 -s USE_WEBGL2=1 -s USE_GLFW=3 -s FORCE_FILESYSTEM=1")
         message(STATUS "Building in Release mode")
     endif()
     
@@ -38,13 +38,13 @@ if(EMSCRIPTEN)
     # 设置链接选项 - 所有-s选项应该在链接阶段设置
     target_link_options(OpenglWebTest PRIVATE 
         "-s WASM=1"
+        "-s USE_WEBGL2=1"
+        "-s USE_GLFW=3"
         # 输出到public目录，确保Vite可以访问
         "-o ${CMAKE_CURRENT_SOURCE_DIR}/public/OpenglWebTest.html"
     )
 
-    # 在Emscripten环境中，OpenGL ES 2.0通过SDL2提供
+    # 在Emscripten环境中，OpenGL ES 2.0通过GLFW提供
     # 不需要额外的OpenGL库链接
-    #target_include_directories(OpenglWebTest PRIVATE ${SDL2_INCLUDE_DIRS})
-    #target_link_libraries(OpenglWebTest PRIVATE ${SDL2_LIBRARIES})
     set_target_properties(OpenglWebTest PROPERTIES SUFFIX ".html")
 endif()

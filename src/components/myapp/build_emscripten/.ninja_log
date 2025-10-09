@@ -1,3 +1,5 @@
 # ninja log v7
-10	2079	7816981594833614	CMakeFiles/OpenglWebTest.dir/cpp/main.cpp.o	e5fd4661d1923bc
-2079	9428	7816981615509491	OpenglWebTest.html	96c69c61e0647d6d
+8	1147	7817149630545359	CMakeFiles/OpenglWebTest.dir/cpp/main.cpp.o	26135e32b761bd11
+1147	5305	7817149641934637	OpenglWebTest.html	230ef7c7aa6431b6
+8	1153	7817153337462755	CMakeFiles/OpenglWebTest.dir/cpp/main.cpp.o	26135e32b761bd11
+1154	5165	7817153348932225	OpenglWebTest.html	230ef7c7aa6431b6
