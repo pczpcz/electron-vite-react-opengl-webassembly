@@ -1,5 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import './App.css';
+import wasmUrl from './build_emscripten/OpenglWebTest.wasm?url';
+import wasmJsUrl from './build_emscripten/OpenglWebTest.js?url';
 
 // 主应用组件
 /**
@@ -15,6 +17,12 @@ function App() {
         if (canvasRef.current) {
             console.log('Setting up Module configuration...');
             
+            // 检查是否已经加载过WASM脚本
+            if (document.querySelector(`script[src="${wasmJsUrl}"]`)) {
+                console.log('WASM script already loaded, skipping...');
+                return;
+            }
+            
             // 创建script元素来设置Module配置
             const configScript = document.createElement('script');
             configScript.innerHTML = `
@@ -22,7 +30,13 @@ function App() {
                 var canv = document.getElementById('canvas');
                 console.log('Canvas element found:', canv);
                 var Module = {
-                    canvas: canv
+                    canvas: canv,
+                    locateFile: function(path, prefix) {
+                        if (path.endsWith('.wasm')) {
+                            return '${wasmUrl}';
+                        }
+                        return prefix + path;
+                    }
                 };
                 console.log('Module configured with canvas:', Module.canvas);
             `;
@@ -30,7 +44,7 @@ function App() {
             
             // 动态创建script标签来加载OpenglWebTest.js
             const wasmScript = document.createElement('script');
-            wasmScript.src = '/OpenglWebTest.js';
+            wasmScript.src = wasmJsUrl;
             wasmScript.async = true;
             wasmScript.onload = () => {
                 console.log('OpenglWebTest.js loaded successfully');
@@ -72,9 +86,7 @@ function App() {
                 if (document.body.contains(configScript)) {
                     document.body.removeChild(configScript);
                 }
-                if (document.body.contains(wasmScript)) {
-                    document.body.removeChild(wasmScript);
-                }
+                // 注意：我们不移除WASM脚本，因为它包含全局状态
             };
         }
     }, []);

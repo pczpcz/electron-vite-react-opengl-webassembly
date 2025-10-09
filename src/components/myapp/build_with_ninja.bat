@@ -43,11 +43,11 @@ echo   - OpenglWebTest.html (Web page)
 echo   - OpenglWebTest.js   (JavaScript glue code)
 echo   - OpenglWebTest.wasm (WebAssembly binary)
 echo.
-echo [4/4] Copying WebAssembly files to public directory...
-REM 确保public目录存在
+echo [4/4] Copying WebAssembly files to build_emscripten directory...
+REM 确保WASM文件在正确的位置
 
-xcopy "build_emscripten\OpenglWebTest.wasm" "..\..\..\public\" /Y
-xcopy "build_emscripten\OpenglWebTest.js" "..\..\..\public\" /Y
+xcopy "OpenglWebTest.wasm" "..\..\..\public\" /Y
+xcopy "OpenglWebTest.js" "..\..\..\public\" /Y
 
 echo.
 echo Build completed successfully!
