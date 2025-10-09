@@ -9,4 +9,154 @@ events:
     message: |
       The target system is: Emscripten - 1 - x86
       The host system is: Windows - 10.0.26100 - AMD64
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "thirdParty/ozz-animation/build-utils/cmake/compiler_settings.cmake:83 (check_cxx_compiler_flag)"
+      - "thirdParty/ozz-animation/CMakeLists.txt:40 (include)"
+    checks:
+      - "Performing Test W_IGNORED_ATTRIBUTES"
+    directories:
+      source: "D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/CMakeFiles/CMakeScratch/TryCompile-d6yg0b"
+      binary: "D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/CMakeFiles/CMakeScratch/TryCompile-d6yg0b"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "D:/MyGame/build/emsdk/upstream/emscripten/emscan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules;D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules;D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules;D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules;D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules"
+    buildResult:
+      variable: "W_IGNORED_ATTRIBUTES"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/CMakeFiles/CMakeScratch/TryCompile-d6yg0b'
+        
+        Run Build Command(s): D:/ninja-win/ninja.exe -v cmTC_a634f
+        [1/2] D:\\MyGame\\build\\emsdk\\upstream\\emscripten\\em++.bat -DW_IGNORED_ATTRIBUTES  -std=c++17   -Wignored-attributes -MD -MT CMakeFiles/cmTC_a634f.dir/src.cxx.o -MF CMakeFiles\\cmTC_a634f.dir\\src.cxx.o.d -o CMakeFiles/cmTC_a634f.dir/src.cxx.o -c D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/CMakeFiles/CMakeScratch/TryCompile-d6yg0b/src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && D:\\MyGame\\build\\emsdk\\upstream\\emscripten\\em++.bat   CMakeFiles/cmTC_a634f.dir/src.cxx.o -o cmTC_a634f.js   && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "thirdParty/ozz-animation/build-utils/cmake/compiler_settings.cmake:90 (check_cxx_compiler_flag)"
+      - "thirdParty/ozz-animation/CMakeLists.txt:40 (include)"
+    checks:
+      - "Performing Test W_98_COMPAT_PEDANTIC"
+    directories:
+      source: "D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/CMakeFiles/CMakeScratch/TryCompile-cqno1d"
+      binary: "D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/CMakeFiles/CMakeScratch/TryCompile-cqno1d"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "D:/MyGame/build/emsdk/upstream/emscripten/emscan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules;D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules;D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules;D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules;D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules"
+    buildResult:
+      variable: "W_98_COMPAT_PEDANTIC"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/CMakeFiles/CMakeScratch/TryCompile-cqno1d'
+        
+        Run Build Command(s): D:/ninja-win/ninja.exe -v cmTC_b71f0
+        [1/2] D:\\MyGame\\build\\emsdk\\upstream\\emscripten\\em++.bat -DW_98_COMPAT_PEDANTIC  -std=c++17   -Wc++98-compat-pedantic -MD -MT CMakeFiles/cmTC_b71f0.dir/src.cxx.o -MF CMakeFiles\\cmTC_b71f0.dir\\src.cxx.o.d -o CMakeFiles/cmTC_b71f0.dir/src.cxx.o -c D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/CMakeFiles/CMakeScratch/TryCompile-cqno1d/src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && D:\\MyGame\\build\\emsdk\\upstream\\emscripten\\em++.bat   CMakeFiles/cmTC_b71f0.dir/src.cxx.o -o cmTC_b71f0.js   && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "thirdParty/ozz-animation/build-utils/cmake/compiler_settings.cmake:97 (check_cxx_compiler_flag)"
+      - "thirdParty/ozz-animation/CMakeLists.txt:40 (include)"
+    checks:
+      - "Performing Test W_UNUSED_RESULT"
+    directories:
+      source: "D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/CMakeFiles/CMakeScratch/TryCompile-uhssbx"
+      binary: "D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/CMakeFiles/CMakeScratch/TryCompile-uhssbx"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "D:/MyGame/build/emsdk/upstream/emscripten/emscan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules;D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules;D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules;D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules;D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules"
+    buildResult:
+      variable: "W_UNUSED_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/CMakeFiles/CMakeScratch/TryCompile-uhssbx'
+        
+        Run Build Command(s): D:/ninja-win/ninja.exe -v cmTC_2c3be
+        [1/2] D:\\MyGame\\build\\emsdk\\upstream\\emscripten\\em++.bat -DW_UNUSED_RESULT  -std=c++17   -Wunused-result -MD -MT CMakeFiles/cmTC_2c3be.dir/src.cxx.o -MF CMakeFiles\\cmTC_2c3be.dir\\src.cxx.o.d -o CMakeFiles/cmTC_2c3be.dir/src.cxx.o -c D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/CMakeFiles/CMakeScratch/TryCompile-uhssbx/src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && D:\\MyGame\\build\\emsdk\\upstream\\emscripten\\em++.bat   CMakeFiles/cmTC_2c3be.dir/src.cxx.o -o cmTC_2c3be.js   && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "thirdParty/ozz-animation/build-utils/cmake/compiler_settings.cmake:98 (check_cxx_compiler_flag)"
+      - "thirdParty/ozz-animation/CMakeLists.txt:40 (include)"
+    checks:
+      - "Performing Test W_NULL_DEREFERENCE"
+    directories:
+      source: "D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/CMakeFiles/CMakeScratch/TryCompile-8hiixw"
+      binary: "D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/CMakeFiles/CMakeScratch/TryCompile-8hiixw"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "D:/MyGame/build/emsdk/upstream/emscripten/emscan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules;D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules;D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules;D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules;D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules"
+    buildResult:
+      variable: "W_NULL_DEREFERENCE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/CMakeFiles/CMakeScratch/TryCompile-8hiixw'
+        
+        Run Build Command(s): D:/ninja-win/ninja.exe -v cmTC_13b23
+        [1/2] D:\\MyGame\\build\\emsdk\\upstream\\emscripten\\em++.bat -DW_NULL_DEREFERENCE  -std=c++17   -Wnull-dereference -MD -MT CMakeFiles/cmTC_13b23.dir/src.cxx.o -MF CMakeFiles\\cmTC_13b23.dir\\src.cxx.o.d -o CMakeFiles/cmTC_13b23.dir/src.cxx.o -c D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/CMakeFiles/CMakeScratch/TryCompile-8hiixw/src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && D:\\MyGame\\build\\emsdk\\upstream\\emscripten\\em++.bat   CMakeFiles/cmTC_13b23.dir/src.cxx.o -o cmTC_13b23.js   && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "thirdParty/ozz-animation/build-utils/cmake/compiler_settings.cmake:99 (check_cxx_compiler_flag)"
+      - "thirdParty/ozz-animation/CMakeLists.txt:40 (include)"
+    checks:
+      - "Performing Test W_PRAGMA_PACK"
+    directories:
+      source: "D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/CMakeFiles/CMakeScratch/TryCompile-pski6q"
+      binary: "D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/CMakeFiles/CMakeScratch/TryCompile-pski6q"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "D:/MyGame/build/emsdk/upstream/emscripten/emscan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules;D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules;D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules;D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules;D:/MyGame/build/emsdk/upstream/emscripten/cmake/Modules"
+    buildResult:
+      variable: "W_PRAGMA_PACK"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/CMakeFiles/CMakeScratch/TryCompile-pski6q'
+        
+        Run Build Command(s): D:/ninja-win/ninja.exe -v cmTC_a2062
+        [1/2] D:\\MyGame\\build\\emsdk\\upstream\\emscripten\\em++.bat -DW_PRAGMA_PACK  -std=c++17   -Wpragma-pack -MD -MT CMakeFiles/cmTC_a2062.dir/src.cxx.o -MF CMakeFiles\\cmTC_a2062.dir\\src.cxx.o.d -o CMakeFiles/cmTC_a2062.dir/src.cxx.o -c D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/CMakeFiles/CMakeScratch/TryCompile-pski6q/src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && D:\\MyGame\\build\\emsdk\\upstream\\emscripten\\em++.bat   CMakeFiles/cmTC_a2062.dir/src.cxx.o -o cmTC_a2062.js   && cd ."
+        
+      exitCode: 0
 ...

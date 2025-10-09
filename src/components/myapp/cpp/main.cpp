@@ -7,6 +7,16 @@
 #include <emscripten.h>
 #include <emscripten/html5.h>
 
+// ozz-animation includes
+#include "ozz/animation/runtime/animation.h"
+#include "ozz/animation/runtime/skeleton.h"
+#include "ozz/animation/runtime/sampling_job.h"
+#include "ozz/animation/runtime/local_to_model_job.h"
+#include "ozz/base/maths/soa_transform.h"
+#include "ozz/base/maths/vec_float.h"
+#include "ozz/base/io/stream.h"
+#include "ozz/base/io/archive.h"
+
 // define GL_GLEXT_PROTOTYPES 1
 // #include <GLES3/gl3.h>
 
@@ -157,6 +167,8 @@ int main()
 #ifdef __APPLE__
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
+
+    ozz::animation::Animation anima;
 
     double w, h;
     emscripten_get_element_css_size("#canvas", &w, &h);

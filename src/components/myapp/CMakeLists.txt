@@ -4,11 +4,14 @@ project(OpenglWebTest VERSION 0.1.0 LANGUAGES C CXX)
 #https://github.com/emscripten-core/emscripten/blob/main/cmake/Modules/Platform/Emscripten.cmake
 
 # 设置C++标准
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # 设置头文件包含路径
 include_directories(${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/cpp)
+
+# 添加第三方库
+add_subdirectory(thirdParty)
 
 # 检查是否使用 Emscripten 工具链
 if(EMSCRIPTEN)
@@ -34,6 +37,9 @@ if(EMSCRIPTEN)
     add_executable(OpenglWebTest 
         cpp/main.cpp
     )
+    
+    # 链接第三方库
+    target_link_libraries(OpenglWebTest PRIVATE ${THIRD_PARTY_LIBS})
         
     # 设置链接选项 - 所有-s选项应该在链接阶段设置
     target_link_options(OpenglWebTest PRIVATE 

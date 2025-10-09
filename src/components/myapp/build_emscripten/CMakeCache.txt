@@ -14,6 +14,12 @@
 # EXTERNAL cache entries
 ########################
 
+//Build ozz as shared libraries
+BUILD_SHARED_LIBS:BOOL=OFF
+
+//Path to a program.
+CLANG_FORMAT:FILEPATH=CLANG_FORMAT-NOTFOUND
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 
@@ -208,12 +214,63 @@ CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=D:/MyGame/build/emsdk/upstream/emscripten/cma
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Enable to build Debian packages
+CPACK_BINARY_DEB:BOOL=OFF
+
+//Enable to build FreeBSD packages
+CPACK_BINARY_FREEBSD:BOOL=OFF
+
+//Enable to build IFW packages
+CPACK_BINARY_IFW:BOOL=OFF
+
+//Enable to build NSIS packages
+CPACK_BINARY_NSIS:BOOL=OFF
+
+//Enable to build RPM packages
+CPACK_BINARY_RPM:BOOL=OFF
+
+//Enable to build STGZ packages
+CPACK_BINARY_STGZ:BOOL=ON
+
+//Enable to build TBZ2 packages
+CPACK_BINARY_TBZ2:BOOL=OFF
+
+//Enable to build TGZ packages
+CPACK_BINARY_TGZ:BOOL=ON
+
+//Enable to build TXZ packages
+CPACK_BINARY_TXZ:BOOL=OFF
+
+//Enable to build TZ packages
+CPACK_BINARY_TZ:BOOL=ON
+
+//Enable to build RPM source packages
+CPACK_SOURCE_RPM:BOOL=OFF
+
+//Enable to build TBZ2 source packages
+CPACK_SOURCE_TBZ2:BOOL=ON
+
+//Enable to build TGZ source packages
+CPACK_SOURCE_TGZ:BOOL=ON
+
+//Enable to build TXZ source packages
+CPACK_SOURCE_TXZ:BOOL=ON
+
+//Enable to build TZ source packages
+CPACK_SOURCE_TZ:BOOL=ON
+
+//Enable to build ZIP source packages
+CPACK_SOURCE_ZIP:BOOL=OFF
+
 //Force C/C++ compiler
 EMSCRIPTEN_FORCE_COMPILERS:BOOL=ON
 
 //If set, static library targets generate LLVM bitcode files (.bc).
 // If disabled (default), UNIX ar archives (.a) are generated.
 EMSCRIPTEN_GENERATE_BITCODE_STATIC_LIBRARIES:BOOL=OFF
+
+//Path to a file.
+FBX_INCLUDE_DIR:PATH=FBX_INCLUDE_DIR-NOTFOUND
 
 //Path to a program.
 NODE_JS_EXECUTABLE:FILEPATH=C:/Program Files/nodejs/node.exe
@@ -226,6 +283,51 @@ OpenglWebTest_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 OpenglWebTest_SOURCE_DIR:STATIC=D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp
+
+//Value Computed by CMake
+ozz_BINARY_DIR:STATIC=D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/thirdParty/ozz-animation
+
+//Value Computed by CMake
+ozz_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+ozz_SOURCE_DIR:STATIC=D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation
+
+//Build data on code change
+ozz_build_data:BOOL=OFF
+
+//Build Fbx pipeline (Requires Fbx SDK)
+ozz_build_fbx:BOOL=ON
+
+//Build glTF importer (Requires c++11)
+ozz_build_gltf:BOOL=ON
+
+//Build howtos
+ozz_build_howtos:BOOL=ON
+
+//Select msvc DLL runtime library
+ozz_build_msvc_rt_dll:BOOL=OFF
+
+//Use per config postfix name
+ozz_build_postfix:BOOL=ON
+
+//Build samples
+ozz_build_samples:BOOL=OFF
+
+//Force SIMD math reference implementation
+ozz_build_simd_ref:BOOL=OFF
+
+//Build unit tests
+ozz_build_tests:BOOL=ON
+
+//Build tools
+ozz_build_tools:BOOL=ON
+
+//Run samples without rendering (used for unit tests)
+ozz_run_tests_headless:BOOL=ON
+
+//Number of loops while running sample tests (used for unit tests)
+ozz_sample_testing_loops:STRING=20
 
 
 ########################
@@ -318,7 +420,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=15
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -359,6 +461,48 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_TAPI-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_DEB
+CPACK_BINARY_DEB-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_FREEBSD
+CPACK_BINARY_FREEBSD-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_IFW
+CPACK_BINARY_IFW-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_NSIS
+CPACK_BINARY_NSIS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_RPM
+CPACK_BINARY_RPM-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_STGZ
+CPACK_BINARY_STGZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_TBZ2
+CPACK_BINARY_TBZ2-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_TGZ
+CPACK_BINARY_TGZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_TXZ
+CPACK_BINARY_TXZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_TZ
+CPACK_BINARY_TZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_RPM
+CPACK_SOURCE_RPM-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TBZ2
+CPACK_SOURCE_TBZ2-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TGZ
+CPACK_SOURCE_TGZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TXZ
+CPACK_SOURCE_TXZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TZ
+CPACK_SOURCE_TZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_ZIP
+CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
 //If true, we are targeting Emscripten output.
 EMSCRIPTEN:INTERNAL=1
+//Test W_98_COMPAT_PEDANTIC
+W_98_COMPAT_PEDANTIC:INTERNAL=1
+//Test W_IGNORED_ATTRIBUTES
+W_IGNORED_ATTRIBUTES:INTERNAL=1
+//Test W_NULL_DEREFERENCE
+W_NULL_DEREFERENCE:INTERNAL=1
+//Test W_PRAGMA_PACK
+W_PRAGMA_PACK:INTERNAL=1
+//Test W_UNUSED_RESULT
+W_UNUSED_RESULT:INTERNAL=1
 
