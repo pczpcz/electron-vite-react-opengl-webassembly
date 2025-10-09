@@ -1,9 +1,10 @@
 body {
     margin: 0;
-    padding: 20px;
+    padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #1e1e1e;
     color: #ffffff;
+    overflow: hidden;
 }
 
 .app-container {
@@ -67,30 +68,20 @@ body {
 }
 
 #canvas {
-    border: 1px solid #444;
+    border: none;
     cursor: pointer;
     display: block;
     width: 100%;
     height: 100%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease;
+    box-shadow: none;
+    transition: none;
 }
 
 #canvas:hover {
-    border-color: #61dafb;
-    box-shadow: 0 6px 16px rgba(97, 218, 251, 0.3);
+    border-color: none;
+    box-shadow: none;
 }
 
-.canvas-container {
-    width: 100%;
-    height: 400px;
-    position: relative;
-    margin: 0 auto;
-    border: 2px solid #333;
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: #252526;
-}
 
 .info-panel {
     background-color: #2d2d30;
@@ -140,7 +131,7 @@ body {
 /* 响应式设计 */
 @media (max-width: 768px) {
     body {
-        padding: 10px;
+        padding: 0;
     }
     
     .header h1 {

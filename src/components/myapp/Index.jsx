@@ -94,14 +94,11 @@ function App() {
     
     return (
         <>
-            <h1>ldjlsjlflsj</h1>
-            <div className="canvas-container">
-                <canvas 
-                    ref={canvasRef}
-                    id="canvas"
-                    onContextMenu={(e) => e.preventDefault()}
-                ></canvas>
-            </div>
+            <canvas 
+                ref={canvasRef}
+                id="canvas"
+                onContextMenu={(e) => e.preventDefault()}
+            ></canvas>
         </>
     );
 }

@@ -86,17 +86,6 @@ EM_BOOL onTouchCancel(int eventType, const EmscriptenTouchEvent *touchEvent, voi
     return EM_TRUE;
 }
 
-EM_BOOL onResize(int eventType, const EmscriptenUiEvent *uiEvent, void *userData)
-{
-    int newWidth = (int)uiEvent->windowInnerWidth;
-    int newHeight = (int)uiEvent->windowInnerHeight /* * hconstants::MAX_DIM_RATIO*/;
-    glViewport(0, 0, newWidth, newHeight);
-    std::cout << newWidth << "x" << newHeight << std::endl;
-    return EM_TRUE;
-}
-
-void setupEvents();
-
 // settings
 struct WebData_t
 {
@@ -105,6 +94,21 @@ struct WebData_t
 };
 
 static WebData_t sWEB;
+
+bool bResize = false;
+EM_BOOL onResize(int eventType, const EmscriptenUiEvent *uiEvent, void *userData)
+{
+    int newWidth = (int)uiEvent->windowInnerWidth;
+    int newHeight = (int)uiEvent->windowInnerHeight /* * hconstants::MAX_DIM_RATIO*/;
+    // glViewport(0, 0, newWidth, newHeight);
+    sWEB.width = newWidth;
+    sWEB.height = newHeight;
+    bResize = true;
+    return EM_TRUE;
+}
+
+void setupEvents();
+
 GLFWwindow *window = nullptr;
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
@@ -154,9 +158,12 @@ int main()
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
 
+    double w, h;
+    emscripten_get_element_css_size("#canvas", &w, &h);
+
     // glfw window creation
     // --------------------
-    window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
+    window = glfwCreateWindow((int)w, (int)h, "LearnOpenGL", NULL, NULL);
     if (window == NULL)
     {
         std::cout << "Failed to create GLFW window" << std::endl;
@@ -283,6 +290,19 @@ int main()
             //    glfwSetWindowSize(window, currentWidth, currentHeight);
             //}
 
+            if (bResize)
+            {
+                double w, h;
+                emscripten_get_element_css_size("#canvas", &w, &h);
+                // SDL_SetWindowSize(sdl_window, (int)w, (int)h);
+                // glfwSetWindowSize(window, (int)w, (int)h);
+                emscripten_set_element_css_size("#canvas", (double)sWEB.width, (double)sWEB.height);
+                // glViewport(0, 0, sWEB.width, sWEB.height);
+
+                std::cout << sWEB.width << "," << sWEB.height << "," << w << "," << h << std::endl;
+                bResize = false;
+            }
+
             // render
             // ------
             glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
@@ -354,12 +374,18 @@ void setupEvents()
             std::cerr << "Some callbacks initialization failed." << std::endl;
         }
 
+        // Get the actual CSS size of the canvas element
         double w, h;
-        emscripten_get_element_css_size(id, &w, &h);
-
+        emscripten_get_element_css_size("#canvas", &w, &h);
         sWEB.width = static_cast<int>(w);
         sWEB.height = static_cast<int>(h);
-        emscripten_set_canvas_element_size(id, sWEB.width, sWEB.height);
+        emscripten_set_element_css_size("#canvas", w, h);
+
+        // Set the canvas size to match the CSS size for proper rendering
+        // emscripten_set_canvas_element_size(id, sWEB.width, sWEB.height);
+
+        // Update the viewport to match the new canvas size
+        // glViewport(0, 0, sWEB.width, sWEB.height);
     }
 #endif
 
