@@ -36,6 +36,18 @@ if(EMSCRIPTEN)
     # 创建WebAssembly目标
     add_executable(OpenglWebTest 
         cpp/main.cpp
+        cpp/Shader.cpp
+        cpp/vertexarrayobject.cpp
+        cpp/bufferobject.cpp
+        cpp/material.cpp
+        cpp/texture.cpp
+        cpp/mesh.cpp
+        cpp/gameobject.cpp
+        cpp/scene.cpp
+        cpp/scenemanager.cpp
+        cpp/renderpass.cpp
+        cpp/rendercommand.cpp
+        cpp/renderpipeline.cpp
     )
     
     # 链接第三方库

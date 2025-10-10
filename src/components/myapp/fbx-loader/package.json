@@ -1,0 +1,16 @@
+{
+  "name": "fbx-loader",
+  "version": "1.0.0",
+  "description": "Native Node.js module for FBX SDK integration",
+  "main": "index.js",
+  "scripts": {
+    "install": "node-gyp rebuild",
+    "build": "node-gyp build",
+    "clean": "node-gyp clean"
+  },
+  "dependencies": {
+    "node-addon-api": "^6.1.0",
+    "node-gyp": "^9.4.0"
+  },
+  "gypfile": true
+}

@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: OpenglWebTest
-# Configurations: 
+# Configurations: Debug
 # =============================================================================
 
 #############################################
@@ -20,6 +20,11 @@
 
 ninja_required_version = 1.5
 
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
 # =============================================================================
 # Include auxiliary files.
 
@@ -44,9 +49,106 @@ cmake_ninja_workdir = D$:/workspace/MyWebGame/electron-vite-react-opengl-webasse
 
 build cmake_object_order_depends_target_OpenglWebTest: phony || cmake_object_order_depends_target_ozz_animation cmake_object_order_depends_target_ozz_animation_offline cmake_object_order_depends_target_ozz_base cmake_object_order_depends_target_ozz_geometry cmake_object_order_depends_target_ozz_options
 
-build CMakeFiles/OpenglWebTest.dir/cpp/main.cpp.o: CXX_COMPILER__OpenglWebTest_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp/main.cpp || cmake_object_order_depends_target_OpenglWebTest
+build CMakeFiles/OpenglWebTest.dir/cpp/main.cpp.o: CXX_COMPILER__OpenglWebTest_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp/main.cpp || cmake_object_order_depends_target_OpenglWebTest
+  CONFIG = Debug
   DEP_FILE = CMakeFiles\OpenglWebTest.dir\cpp\main.cpp.o.d
-  FLAGS = -std=c++11 -O3 -s USE_WEBGL2=1 -s USE_GLFW=3 -s FORCE_FILESYSTEM=1 -std=gnu++17
+  FLAGS = -std=c++11 -O0 -g -s USE_WEBGL2=1 -s USE_GLFW=3 -g -std=gnu++17
+  INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
+  OBJECT_DIR = CMakeFiles\OpenglWebTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenglWebTest.dir\cpp
+
+build CMakeFiles/OpenglWebTest.dir/cpp/Shader.cpp.o: CXX_COMPILER__OpenglWebTest_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp/Shader.cpp || cmake_object_order_depends_target_OpenglWebTest
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\OpenglWebTest.dir\cpp\Shader.cpp.o.d
+  FLAGS = -std=c++11 -O0 -g -s USE_WEBGL2=1 -s USE_GLFW=3 -g -std=gnu++17
+  INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
+  OBJECT_DIR = CMakeFiles\OpenglWebTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenglWebTest.dir\cpp
+
+build CMakeFiles/OpenglWebTest.dir/cpp/vertexarrayobject.cpp.o: CXX_COMPILER__OpenglWebTest_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp/vertexarrayobject.cpp || cmake_object_order_depends_target_OpenglWebTest
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\OpenglWebTest.dir\cpp\vertexarrayobject.cpp.o.d
+  FLAGS = -std=c++11 -O0 -g -s USE_WEBGL2=1 -s USE_GLFW=3 -g -std=gnu++17
+  INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
+  OBJECT_DIR = CMakeFiles\OpenglWebTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenglWebTest.dir\cpp
+
+build CMakeFiles/OpenglWebTest.dir/cpp/bufferobject.cpp.o: CXX_COMPILER__OpenglWebTest_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp/bufferobject.cpp || cmake_object_order_depends_target_OpenglWebTest
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\OpenglWebTest.dir\cpp\bufferobject.cpp.o.d
+  FLAGS = -std=c++11 -O0 -g -s USE_WEBGL2=1 -s USE_GLFW=3 -g -std=gnu++17
+  INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
+  OBJECT_DIR = CMakeFiles\OpenglWebTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenglWebTest.dir\cpp
+
+build CMakeFiles/OpenglWebTest.dir/cpp/material.cpp.o: CXX_COMPILER__OpenglWebTest_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp/material.cpp || cmake_object_order_depends_target_OpenglWebTest
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\OpenglWebTest.dir\cpp\material.cpp.o.d
+  FLAGS = -std=c++11 -O0 -g -s USE_WEBGL2=1 -s USE_GLFW=3 -g -std=gnu++17
+  INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
+  OBJECT_DIR = CMakeFiles\OpenglWebTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenglWebTest.dir\cpp
+
+build CMakeFiles/OpenglWebTest.dir/cpp/texture.cpp.o: CXX_COMPILER__OpenglWebTest_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp/texture.cpp || cmake_object_order_depends_target_OpenglWebTest
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\OpenglWebTest.dir\cpp\texture.cpp.o.d
+  FLAGS = -std=c++11 -O0 -g -s USE_WEBGL2=1 -s USE_GLFW=3 -g -std=gnu++17
+  INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
+  OBJECT_DIR = CMakeFiles\OpenglWebTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenglWebTest.dir\cpp
+
+build CMakeFiles/OpenglWebTest.dir/cpp/mesh.cpp.o: CXX_COMPILER__OpenglWebTest_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp/mesh.cpp || cmake_object_order_depends_target_OpenglWebTest
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\OpenglWebTest.dir\cpp\mesh.cpp.o.d
+  FLAGS = -std=c++11 -O0 -g -s USE_WEBGL2=1 -s USE_GLFW=3 -g -std=gnu++17
+  INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
+  OBJECT_DIR = CMakeFiles\OpenglWebTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenglWebTest.dir\cpp
+
+build CMakeFiles/OpenglWebTest.dir/cpp/gameobject.cpp.o: CXX_COMPILER__OpenglWebTest_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp/gameobject.cpp || cmake_object_order_depends_target_OpenglWebTest
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\OpenglWebTest.dir\cpp\gameobject.cpp.o.d
+  FLAGS = -std=c++11 -O0 -g -s USE_WEBGL2=1 -s USE_GLFW=3 -g -std=gnu++17
+  INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
+  OBJECT_DIR = CMakeFiles\OpenglWebTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenglWebTest.dir\cpp
+
+build CMakeFiles/OpenglWebTest.dir/cpp/scene.cpp.o: CXX_COMPILER__OpenglWebTest_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp/scene.cpp || cmake_object_order_depends_target_OpenglWebTest
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\OpenglWebTest.dir\cpp\scene.cpp.o.d
+  FLAGS = -std=c++11 -O0 -g -s USE_WEBGL2=1 -s USE_GLFW=3 -g -std=gnu++17
+  INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
+  OBJECT_DIR = CMakeFiles\OpenglWebTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenglWebTest.dir\cpp
+
+build CMakeFiles/OpenglWebTest.dir/cpp/scenemanager.cpp.o: CXX_COMPILER__OpenglWebTest_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp/scenemanager.cpp || cmake_object_order_depends_target_OpenglWebTest
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\OpenglWebTest.dir\cpp\scenemanager.cpp.o.d
+  FLAGS = -std=c++11 -O0 -g -s USE_WEBGL2=1 -s USE_GLFW=3 -g -std=gnu++17
+  INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
+  OBJECT_DIR = CMakeFiles\OpenglWebTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenglWebTest.dir\cpp
+
+build CMakeFiles/OpenglWebTest.dir/cpp/renderpass.cpp.o: CXX_COMPILER__OpenglWebTest_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp/renderpass.cpp || cmake_object_order_depends_target_OpenglWebTest
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\OpenglWebTest.dir\cpp\renderpass.cpp.o.d
+  FLAGS = -std=c++11 -O0 -g -s USE_WEBGL2=1 -s USE_GLFW=3 -g -std=gnu++17
+  INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
+  OBJECT_DIR = CMakeFiles\OpenglWebTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenglWebTest.dir\cpp
+
+build CMakeFiles/OpenglWebTest.dir/cpp/rendercommand.cpp.o: CXX_COMPILER__OpenglWebTest_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp/rendercommand.cpp || cmake_object_order_depends_target_OpenglWebTest
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\OpenglWebTest.dir\cpp\rendercommand.cpp.o.d
+  FLAGS = -std=c++11 -O0 -g -s USE_WEBGL2=1 -s USE_GLFW=3 -g -std=gnu++17
+  INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
+  OBJECT_DIR = CMakeFiles\OpenglWebTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenglWebTest.dir\cpp
+
+build CMakeFiles/OpenglWebTest.dir/cpp/renderpipeline.cpp.o: CXX_COMPILER__OpenglWebTest_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp/renderpipeline.cpp || cmake_object_order_depends_target_OpenglWebTest
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\OpenglWebTest.dir\cpp\renderpipeline.cpp.o.d
+  FLAGS = -std=c++11 -O0 -g -s USE_WEBGL2=1 -s USE_GLFW=3 -g -std=gnu++17
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = CMakeFiles\OpenglWebTest.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenglWebTest.dir\cpp
@@ -59,10 +161,11 @@ build CMakeFiles/OpenglWebTest.dir/cpp/main.cpp.o: CXX_COMPILER__OpenglWebTest_u
 #############################################
 # Link the executable OpenglWebTest.html
 
-build OpenglWebTest.html: CXX_EXECUTABLE_LINKER__OpenglWebTest_ CMakeFiles/OpenglWebTest.dir/cpp/main.cpp.o | thirdParty/ozz-animation/src/animation/runtime/libozz_animation.a thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline.a thirdParty/ozz-animation/src/base/libozz_base.a thirdParty/ozz-animation/src/options/libozz_options.a thirdParty/ozz-animation/src/geometry/runtime/libozz_geometry.a thirdParty/ozz-animation/src/animation/runtime/libozz_animation.a thirdParty/ozz-animation/src/base/libozz_base.a || thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline.a thirdParty/ozz-animation/src/animation/runtime/libozz_animation.a thirdParty/ozz-animation/src/base/libozz_base.a thirdParty/ozz-animation/src/geometry/runtime/libozz_geometry.a thirdParty/ozz-animation/src/options/libozz_options.a
-  FLAGS = -std=c++11 -O3 -s USE_WEBGL2=1 -s USE_GLFW=3 -s FORCE_FILESYSTEM=1
+build OpenglWebTest.html: CXX_EXECUTABLE_LINKER__OpenglWebTest_Debug CMakeFiles/OpenglWebTest.dir/cpp/main.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/Shader.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/vertexarrayobject.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/bufferobject.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/material.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/texture.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/mesh.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/gameobject.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/scene.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/scenemanager.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/renderpass.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/rendercommand.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/renderpipeline.cpp.o | thirdParty/ozz-animation/src/animation/runtime/libozz_animation_d.a thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline_d.a thirdParty/ozz-animation/src/base/libozz_base_d.a thirdParty/ozz-animation/src/options/libozz_options_d.a thirdParty/ozz-animation/src/geometry/runtime/libozz_geometry_d.a thirdParty/ozz-animation/src/animation/runtime/libozz_animation_d.a thirdParty/ozz-animation/src/base/libozz_base_d.a || thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline_d.a thirdParty/ozz-animation/src/animation/runtime/libozz_animation_d.a thirdParty/ozz-animation/src/base/libozz_base_d.a thirdParty/ozz-animation/src/geometry/runtime/libozz_geometry_d.a thirdParty/ozz-animation/src/options/libozz_options_d.a
+  CONFIG = Debug
+  FLAGS = -std=c++11 -O0 -g -s USE_WEBGL2=1 -s USE_GLFW=3 -g
   LINK_FLAGS = "-s WASM=1" "-s USE_WEBGL2=1" "-s USE_GLFW=3" "-o D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/public/OpenglWebTest.html"
-  LINK_LIBRARIES = thirdParty/ozz-animation/src/animation/runtime/libozz_animation.a  thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline.a  thirdParty/ozz-animation/src/base/libozz_base.a  thirdParty/ozz-animation/src/options/libozz_options.a  thirdParty/ozz-animation/src/geometry/runtime/libozz_geometry.a  thirdParty/ozz-animation/src/animation/runtime/libozz_animation.a  thirdParty/ozz-animation/src/base/libozz_base.a
+  LINK_LIBRARIES = thirdParty/ozz-animation/src/animation/runtime/libozz_animation_d.a  thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline_d.a  thirdParty/ozz-animation/src/base/libozz_base_d.a  thirdParty/ozz-animation/src/options/libozz_options_d.a  thirdParty/ozz-animation/src/geometry/runtime/libozz_geometry_d.a  thirdParty/ozz-animation/src/animation/runtime/libozz_animation_d.a  thirdParty/ozz-animation/src/base/libozz_base_d.a
   OBJECT_DIR = CMakeFiles\OpenglWebTest.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -410,86 +513,98 @@ build thirdParty/ozz-animation/src/install/local: phony thirdParty/ozz-animation
 
 build cmake_object_order_depends_target_ozz_base: phony || .
 
-build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/memory/allocator.cc.o: CXX_COMPILER__ozz_base_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/base/memory/allocator.cc || cmake_object_order_depends_target_ozz_base
+build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/memory/allocator.cc.o: CXX_COMPILER__ozz_base_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/base/memory/allocator.cc || cmake_object_order_depends_target_ozz_base
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir\memory\allocator.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir\memory
 
-build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/platform.cc.o: CXX_COMPILER__ozz_base_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/base/platform.cc || cmake_object_order_depends_target_ozz_base
+build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/platform.cc.o: CXX_COMPILER__ozz_base_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/base/platform.cc || cmake_object_order_depends_target_ozz_base
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir\platform.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir
 
-build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/log.cc.o: CXX_COMPILER__ozz_base_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/base/log.cc || cmake_object_order_depends_target_ozz_base
+build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/log.cc.o: CXX_COMPILER__ozz_base_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/base/log.cc || cmake_object_order_depends_target_ozz_base
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir\log.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir
 
-build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/containers/string_archive.cc.o: CXX_COMPILER__ozz_base_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/base/containers/string_archive.cc || cmake_object_order_depends_target_ozz_base
+build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/containers/string_archive.cc.o: CXX_COMPILER__ozz_base_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/base/containers/string_archive.cc || cmake_object_order_depends_target_ozz_base
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir\containers\string_archive.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir\containers
 
-build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/encode/group_varint.cc.o: CXX_COMPILER__ozz_base_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/base/encode/group_varint.cc || cmake_object_order_depends_target_ozz_base
+build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/encode/group_varint.cc.o: CXX_COMPILER__ozz_base_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/base/encode/group_varint.cc || cmake_object_order_depends_target_ozz_base
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir\encode\group_varint.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir\encode
 
-build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/io/archive.cc.o: CXX_COMPILER__ozz_base_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/base/io/archive.cc || cmake_object_order_depends_target_ozz_base
+build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/io/archive.cc.o: CXX_COMPILER__ozz_base_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/base/io/archive.cc || cmake_object_order_depends_target_ozz_base
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir\io\archive.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir\io
 
-build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/io/stream.cc.o: CXX_COMPILER__ozz_base_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/base/io/stream.cc || cmake_object_order_depends_target_ozz_base
+build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/io/stream.cc.o: CXX_COMPILER__ozz_base_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/base/io/stream.cc || cmake_object_order_depends_target_ozz_base
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir\io\stream.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir\io
 
-build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/maths/box.cc.o: CXX_COMPILER__ozz_base_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/base/maths/box.cc || cmake_object_order_depends_target_ozz_base
+build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/maths/box.cc.o: CXX_COMPILER__ozz_base_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/base/maths/box.cc || cmake_object_order_depends_target_ozz_base
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir\maths\box.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir\maths
 
-build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/maths/simd_math.cc.o: CXX_COMPILER__ozz_base_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/base/maths/simd_math.cc || cmake_object_order_depends_target_ozz_base
+build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/maths/simd_math.cc.o: CXX_COMPILER__ozz_base_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/base/maths/simd_math.cc || cmake_object_order_depends_target_ozz_base
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir\maths\simd_math.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir\maths
 
-build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/maths/math_archive.cc.o: CXX_COMPILER__ozz_base_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/base/maths/math_archive.cc || cmake_object_order_depends_target_ozz_base
+build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/maths/math_archive.cc.o: CXX_COMPILER__ozz_base_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/base/maths/math_archive.cc || cmake_object_order_depends_target_ozz_base
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir\maths\math_archive.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir\maths
 
-build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/maths/soa_math_archive.cc.o: CXX_COMPILER__ozz_base_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/base/maths/soa_math_archive.cc || cmake_object_order_depends_target_ozz_base
+build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/maths/soa_math_archive.cc.o: CXX_COMPILER__ozz_base_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/base/maths/soa_math_archive.cc || cmake_object_order_depends_target_ozz_base
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir\maths\soa_math_archive.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir\maths
 
-build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/maths/simd_math_archive.cc.o: CXX_COMPILER__ozz_base_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/base/maths/simd_math_archive.cc || cmake_object_order_depends_target_ozz_base
+build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/maths/simd_math_archive.cc.o: CXX_COMPILER__ozz_base_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/base/maths/simd_math_archive.cc || cmake_object_order_depends_target_ozz_base
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir\maths\simd_math_archive.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir\maths
@@ -500,15 +615,16 @@ build thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/maths/simd_math_
 
 
 #############################################
-# Link the static library thirdParty\ozz-animation\src\base\libozz_base.a
+# Link the static library thirdParty\ozz-animation\src\base\libozz_base_d.a
 
-build thirdParty/ozz-animation/src/base/libozz_base.a: CXX_STATIC_LIBRARY_LINKER__ozz_base_ thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/memory/allocator.cc.o thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/platform.cc.o thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/log.cc.o thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/containers/string_archive.cc.o thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/encode/group_varint.cc.o thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/io/archive.cc.o thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/io/stream.cc.o thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/maths/box.cc.o thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/maths/simd_math.cc.o thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/maths/math_archive.cc.o thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/maths/soa_math_archive.cc.o thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/maths/simd_math_archive.cc.o
-  LANGUAGE_COMPILE_FLAGS = -Wno-error
+build thirdParty/ozz-animation/src/base/libozz_base_d.a: CXX_STATIC_LIBRARY_LINKER__ozz_base_Debug thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/memory/allocator.cc.o thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/platform.cc.o thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/log.cc.o thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/containers/string_archive.cc.o thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/encode/group_varint.cc.o thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/io/archive.cc.o thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/io/stream.cc.o thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/maths/box.cc.o thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/maths/simd_math.cc.o thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/maths/math_archive.cc.o thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/maths/soa_math_archive.cc.o thirdParty/ozz-animation/src/base/CMakeFiles/ozz_base.dir/maths/simd_math_archive.cc.o
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -Wno-error -g
   OBJECT_DIR = thirdParty\ozz-animation\src\base\CMakeFiles\ozz_base.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = thirdParty\ozz-animation\src\base\libozz_base.a
-  TARGET_PDB = ozz_base.a.dbg
+  TARGET_FILE = thirdParty\ozz-animation\src\base\libozz_base_d.a
+  TARGET_PDB = ozz_base_d.a.dbg
 
 
 #############################################
@@ -629,9 +745,10 @@ build thirdParty/ozz-animation/src_fused/ozz_base.cc | ${cmake_ninja_workdir}thi
 
 build cmake_object_order_depends_target_ozz_options: phony || cmake_object_order_depends_target_ozz_base
 
-build thirdParty/ozz-animation/src/options/CMakeFiles/ozz_options.dir/options.cc.o: CXX_COMPILER__ozz_options_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/options/options.cc || cmake_object_order_depends_target_ozz_options
+build thirdParty/ozz-animation/src/options/CMakeFiles/ozz_options.dir/options.cc.o: CXX_COMPILER__ozz_options_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/options/options.cc || cmake_object_order_depends_target_ozz_options
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\options\CMakeFiles\ozz_options.dir\options.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\options\CMakeFiles\ozz_options.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\options\CMakeFiles\ozz_options.dir
@@ -642,15 +759,16 @@ build thirdParty/ozz-animation/src/options/CMakeFiles/ozz_options.dir/options.cc
 
 
 #############################################
-# Link the static library thirdParty\ozz-animation\src\options\libozz_options.a
+# Link the static library thirdParty\ozz-animation\src\options\libozz_options_d.a
 
-build thirdParty/ozz-animation/src/options/libozz_options.a: CXX_STATIC_LIBRARY_LINKER__ozz_options_ thirdParty/ozz-animation/src/options/CMakeFiles/ozz_options.dir/options.cc.o || thirdParty/ozz-animation/src/base/libozz_base.a
-  LANGUAGE_COMPILE_FLAGS = -Wno-error
+build thirdParty/ozz-animation/src/options/libozz_options_d.a: CXX_STATIC_LIBRARY_LINKER__ozz_options_Debug thirdParty/ozz-animation/src/options/CMakeFiles/ozz_options.dir/options.cc.o || thirdParty/ozz-animation/src/base/libozz_base_d.a
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -Wno-error -g
   OBJECT_DIR = thirdParty\ozz-animation\src\options\CMakeFiles\ozz_options.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = thirdParty\ozz-animation\src\options\libozz_options.a
-  TARGET_PDB = ozz_options.a.dbg
+  TARGET_FILE = thirdParty\ozz-animation\src\options\libozz_options_d.a
+  TARGET_PDB = ozz_options_d.a.dbg
 
 
 #############################################
@@ -848,93 +966,106 @@ build thirdParty/ozz-animation/src/animation/install/local: phony thirdParty/ozz
 
 build cmake_object_order_depends_target_ozz_animation: phony || cmake_object_order_depends_target_ozz_base
 
-build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/animation.cc.o: CXX_COMPILER__ozz_animation_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/animation.cc || cmake_object_order_depends_target_ozz_animation
+build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/animation.cc.o: CXX_COMPILER__ozz_animation_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/animation.cc || cmake_object_order_depends_target_ozz_animation
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir\animation.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
 
-build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/animation_utils.cc.o: CXX_COMPILER__ozz_animation_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/animation_utils.cc || cmake_object_order_depends_target_ozz_animation
+build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/animation_utils.cc.o: CXX_COMPILER__ozz_animation_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/animation_utils.cc || cmake_object_order_depends_target_ozz_animation
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir\animation_utils.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
 
-build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/blending_job.cc.o: CXX_COMPILER__ozz_animation_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/blending_job.cc || cmake_object_order_depends_target_ozz_animation
+build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/blending_job.cc.o: CXX_COMPILER__ozz_animation_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/blending_job.cc || cmake_object_order_depends_target_ozz_animation
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir\blending_job.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
 
-build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/ik_aim_job.cc.o: CXX_COMPILER__ozz_animation_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/ik_aim_job.cc || cmake_object_order_depends_target_ozz_animation
+build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/ik_aim_job.cc.o: CXX_COMPILER__ozz_animation_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/ik_aim_job.cc || cmake_object_order_depends_target_ozz_animation
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir\ik_aim_job.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
 
-build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/ik_two_bone_job.cc.o: CXX_COMPILER__ozz_animation_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/ik_two_bone_job.cc || cmake_object_order_depends_target_ozz_animation
+build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/ik_two_bone_job.cc.o: CXX_COMPILER__ozz_animation_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/ik_two_bone_job.cc || cmake_object_order_depends_target_ozz_animation
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir\ik_two_bone_job.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
 
-build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/local_to_model_job.cc.o: CXX_COMPILER__ozz_animation_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/local_to_model_job.cc || cmake_object_order_depends_target_ozz_animation
+build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/local_to_model_job.cc.o: CXX_COMPILER__ozz_animation_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/local_to_model_job.cc || cmake_object_order_depends_target_ozz_animation
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir\local_to_model_job.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
 
-build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/motion_blending_job.cc.o: CXX_COMPILER__ozz_animation_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/motion_blending_job.cc || cmake_object_order_depends_target_ozz_animation
+build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/motion_blending_job.cc.o: CXX_COMPILER__ozz_animation_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/motion_blending_job.cc || cmake_object_order_depends_target_ozz_animation
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir\motion_blending_job.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
 
-build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/sampling_job.cc.o: CXX_COMPILER__ozz_animation_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/sampling_job.cc || cmake_object_order_depends_target_ozz_animation
+build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/sampling_job.cc.o: CXX_COMPILER__ozz_animation_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/sampling_job.cc || cmake_object_order_depends_target_ozz_animation
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir\sampling_job.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
 
-build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/skeleton.cc.o: CXX_COMPILER__ozz_animation_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/skeleton.cc || cmake_object_order_depends_target_ozz_animation
+build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/skeleton.cc.o: CXX_COMPILER__ozz_animation_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/skeleton.cc || cmake_object_order_depends_target_ozz_animation
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir\skeleton.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
 
-build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/skeleton_utils.cc.o: CXX_COMPILER__ozz_animation_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/skeleton_utils.cc || cmake_object_order_depends_target_ozz_animation
+build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/skeleton_utils.cc.o: CXX_COMPILER__ozz_animation_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/skeleton_utils.cc || cmake_object_order_depends_target_ozz_animation
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir\skeleton_utils.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
 
-build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/track.cc.o: CXX_COMPILER__ozz_animation_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/track.cc || cmake_object_order_depends_target_ozz_animation
+build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/track.cc.o: CXX_COMPILER__ozz_animation_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/track.cc || cmake_object_order_depends_target_ozz_animation
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir\track.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
 
-build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/track_sampling_job.cc.o: CXX_COMPILER__ozz_animation_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/track_sampling_job.cc || cmake_object_order_depends_target_ozz_animation
+build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/track_sampling_job.cc.o: CXX_COMPILER__ozz_animation_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/track_sampling_job.cc || cmake_object_order_depends_target_ozz_animation
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir\track_sampling_job.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
 
-build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/track_triggering_job.cc.o: CXX_COMPILER__ozz_animation_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/track_triggering_job.cc || cmake_object_order_depends_target_ozz_animation
+build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/track_triggering_job.cc.o: CXX_COMPILER__ozz_animation_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/runtime/track_triggering_job.cc || cmake_object_order_depends_target_ozz_animation
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir\track_triggering_job.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
@@ -945,15 +1076,16 @@ build thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.di
 
 
 #############################################
-# Link the static library thirdParty\ozz-animation\src\animation\runtime\libozz_animation.a
+# Link the static library thirdParty\ozz-animation\src\animation\runtime\libozz_animation_d.a
 
-build thirdParty/ozz-animation/src/animation/runtime/libozz_animation.a: CXX_STATIC_LIBRARY_LINKER__ozz_animation_ thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/animation.cc.o thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/animation_utils.cc.o thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/blending_job.cc.o thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/ik_aim_job.cc.o thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/ik_two_bone_job.cc.o thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/local_to_model_job.cc.o thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/motion_blending_job.cc.o thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/sampling_job.cc.o thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/skeleton.cc.o thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/skeleton_utils.cc.o thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/track.cc.o thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/track_sampling_job.cc.o thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/track_triggering_job.cc.o || thirdParty/ozz-animation/src/base/libozz_base.a
-  LANGUAGE_COMPILE_FLAGS = -Wno-error
+build thirdParty/ozz-animation/src/animation/runtime/libozz_animation_d.a: CXX_STATIC_LIBRARY_LINKER__ozz_animation_Debug thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/animation.cc.o thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/animation_utils.cc.o thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/blending_job.cc.o thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/ik_aim_job.cc.o thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/ik_two_bone_job.cc.o thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/local_to_model_job.cc.o thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/motion_blending_job.cc.o thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/sampling_job.cc.o thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/skeleton.cc.o thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/skeleton_utils.cc.o thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/track.cc.o thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/track_sampling_job.cc.o thirdParty/ozz-animation/src/animation/runtime/CMakeFiles/ozz_animation.dir/track_triggering_job.cc.o || thirdParty/ozz-animation/src/base/libozz_base_d.a
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -Wno-error -g
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\runtime\CMakeFiles\ozz_animation.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = thirdParty\ozz-animation\src\animation\runtime\libozz_animation.a
-  TARGET_PDB = ozz_animation.a.dbg
+  TARGET_FILE = thirdParty\ozz-animation\src\animation\runtime\libozz_animation_d.a
+  TARGET_PDB = ozz_animation_d.a.dbg
 
 
 #############################################
@@ -1068,100 +1200,114 @@ build thirdParty/ozz-animation/src_fused/ozz_animation.cc | ${cmake_ninja_workdi
 
 build cmake_object_order_depends_target_ozz_animation_offline: phony || cmake_object_order_depends_target_ozz_animation cmake_object_order_depends_target_ozz_base
 
-build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_animation.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/raw_animation.cc || cmake_object_order_depends_target_ozz_animation_offline
+build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_animation.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/raw_animation.cc || cmake_object_order_depends_target_ozz_animation_offline
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir\raw_animation.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
 
-build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_animation_archive.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/raw_animation_archive.cc || cmake_object_order_depends_target_ozz_animation_offline
+build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_animation_archive.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/raw_animation_archive.cc || cmake_object_order_depends_target_ozz_animation_offline
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir\raw_animation_archive.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
 
-build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_animation_utils.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/raw_animation_utils.cc || cmake_object_order_depends_target_ozz_animation_offline
+build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_animation_utils.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/raw_animation_utils.cc || cmake_object_order_depends_target_ozz_animation_offline
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir\raw_animation_utils.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
 
-build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/animation_builder.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/animation_builder.cc || cmake_object_order_depends_target_ozz_animation_offline
+build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/animation_builder.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/animation_builder.cc || cmake_object_order_depends_target_ozz_animation_offline
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir\animation_builder.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
 
-build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/animation_optimizer.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/animation_optimizer.cc || cmake_object_order_depends_target_ozz_animation_offline
+build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/animation_optimizer.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/animation_optimizer.cc || cmake_object_order_depends_target_ozz_animation_offline
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir\animation_optimizer.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
 
-build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/additive_animation_builder.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/additive_animation_builder.cc || cmake_object_order_depends_target_ozz_animation_offline
+build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/additive_animation_builder.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/additive_animation_builder.cc || cmake_object_order_depends_target_ozz_animation_offline
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir\additive_animation_builder.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
 
-build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/motion_extractor.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/motion_extractor.cc || cmake_object_order_depends_target_ozz_animation_offline
+build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/motion_extractor.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/motion_extractor.cc || cmake_object_order_depends_target_ozz_animation_offline
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir\motion_extractor.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
 
-build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_skeleton.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/raw_skeleton.cc || cmake_object_order_depends_target_ozz_animation_offline
+build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_skeleton.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/raw_skeleton.cc || cmake_object_order_depends_target_ozz_animation_offline
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir\raw_skeleton.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
 
-build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_skeleton_archive.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/raw_skeleton_archive.cc || cmake_object_order_depends_target_ozz_animation_offline
+build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_skeleton_archive.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/raw_skeleton_archive.cc || cmake_object_order_depends_target_ozz_animation_offline
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir\raw_skeleton_archive.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
 
-build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/skeleton_builder.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/skeleton_builder.cc || cmake_object_order_depends_target_ozz_animation_offline
+build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/skeleton_builder.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/skeleton_builder.cc || cmake_object_order_depends_target_ozz_animation_offline
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir\skeleton_builder.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
 
-build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_track.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/raw_track.cc || cmake_object_order_depends_target_ozz_animation_offline
+build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_track.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/raw_track.cc || cmake_object_order_depends_target_ozz_animation_offline
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir\raw_track.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
 
-build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_track_utils.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/raw_track_utils.cc || cmake_object_order_depends_target_ozz_animation_offline
+build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_track_utils.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/raw_track_utils.cc || cmake_object_order_depends_target_ozz_animation_offline
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir\raw_track_utils.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
 
-build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/track_builder.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/track_builder.cc || cmake_object_order_depends_target_ozz_animation_offline
+build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/track_builder.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/track_builder.cc || cmake_object_order_depends_target_ozz_animation_offline
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir\track_builder.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
 
-build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/track_optimizer.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/track_optimizer.cc || cmake_object_order_depends_target_ozz_animation_offline
+build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/track_optimizer.cc.o: CXX_COMPILER__ozz_animation_offline_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/track_optimizer.cc || cmake_object_order_depends_target_ozz_animation_offline
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir\track_optimizer.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
@@ -1172,15 +1318,16 @@ build thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_of
 
 
 #############################################
-# Link the static library thirdParty\ozz-animation\src\animation\offline\libozz_animation_offline.a
+# Link the static library thirdParty\ozz-animation\src\animation\offline\libozz_animation_offline_d.a
 
-build thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline.a: CXX_STATIC_LIBRARY_LINKER__ozz_animation_offline_ thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_animation.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_animation_archive.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_animation_utils.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/animation_builder.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/animation_optimizer.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/additive_animation_builder.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/motion_extractor.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_skeleton.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_skeleton_archive.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/skeleton_builder.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_track.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_track_utils.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/track_builder.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/track_optimizer.cc.o || thirdParty/ozz-animation/src/animation/runtime/libozz_animation.a thirdParty/ozz-animation/src/base/libozz_base.a
-  LANGUAGE_COMPILE_FLAGS = -Wno-error
+build thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline_d.a: CXX_STATIC_LIBRARY_LINKER__ozz_animation_offline_Debug thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_animation.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_animation_archive.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_animation_utils.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/animation_builder.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/animation_optimizer.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/additive_animation_builder.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/motion_extractor.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_skeleton.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_skeleton_archive.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/skeleton_builder.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_track.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/raw_track_utils.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/track_builder.cc.o thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/track_optimizer.cc.o || thirdParty/ozz-animation/src/animation/runtime/libozz_animation_d.a thirdParty/ozz-animation/src/base/libozz_base_d.a
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -Wno-error -g
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\CMakeFiles\ozz_animation_offline.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = thirdParty\ozz-animation\src\animation\offline\libozz_animation_offline.a
-  TARGET_PDB = ozz_animation_offline.a.dbg
+  TARGET_FILE = thirdParty\ozz-animation\src\animation\offline\libozz_animation_offline_d.a
+  TARGET_PDB = ozz_animation_offline_d.a.dbg
 
 
 #############################################
@@ -1295,37 +1442,42 @@ build thirdParty/ozz-animation/src_fused/ozz_animation_offline.cc | ${cmake_ninj
 
 build cmake_object_order_depends_target_ozz_animation_tools: phony || cmake_object_order_depends_target_json cmake_object_order_depends_target_ozz_animation cmake_object_order_depends_target_ozz_animation_offline cmake_object_order_depends_target_ozz_base cmake_object_order_depends_target_ozz_options
 
-build thirdParty/ozz-animation/src/animation/offline/tools/CMakeFiles/ozz_animation_tools.dir/import2ozz.cc.o: CXX_COMPILER__ozz_animation_tools_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/tools/import2ozz.cc || cmake_object_order_depends_target_ozz_animation_tools
+build thirdParty/ozz-animation/src/animation/offline/tools/CMakeFiles/ozz_animation_tools.dir/import2ozz.cc.o: CXX_COMPILER__ozz_animation_tools_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/tools/import2ozz.cc || cmake_object_order_depends_target_ozz_animation_tools
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\offline\tools\CMakeFiles\ozz_animation_tools.dir\import2ozz.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/extern/jsoncpp/dist
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\tools\CMakeFiles\ozz_animation_tools.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\offline\tools\CMakeFiles\ozz_animation_tools.dir
 
-build thirdParty/ozz-animation/src/animation/offline/tools/CMakeFiles/ozz_animation_tools.dir/import2ozz_anim.cc.o: CXX_COMPILER__ozz_animation_tools_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/tools/import2ozz_anim.cc || cmake_object_order_depends_target_ozz_animation_tools
+build thirdParty/ozz-animation/src/animation/offline/tools/CMakeFiles/ozz_animation_tools.dir/import2ozz_anim.cc.o: CXX_COMPILER__ozz_animation_tools_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/tools/import2ozz_anim.cc || cmake_object_order_depends_target_ozz_animation_tools
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\offline\tools\CMakeFiles\ozz_animation_tools.dir\import2ozz_anim.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/extern/jsoncpp/dist
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\tools\CMakeFiles\ozz_animation_tools.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\offline\tools\CMakeFiles\ozz_animation_tools.dir
 
-build thirdParty/ozz-animation/src/animation/offline/tools/CMakeFiles/ozz_animation_tools.dir/import2ozz_config.cc.o: CXX_COMPILER__ozz_animation_tools_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/tools/import2ozz_config.cc || cmake_object_order_depends_target_ozz_animation_tools
+build thirdParty/ozz-animation/src/animation/offline/tools/CMakeFiles/ozz_animation_tools.dir/import2ozz_config.cc.o: CXX_COMPILER__ozz_animation_tools_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/tools/import2ozz_config.cc || cmake_object_order_depends_target_ozz_animation_tools
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\offline\tools\CMakeFiles\ozz_animation_tools.dir\import2ozz_config.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/extern/jsoncpp/dist
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\tools\CMakeFiles\ozz_animation_tools.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\offline\tools\CMakeFiles\ozz_animation_tools.dir
 
-build thirdParty/ozz-animation/src/animation/offline/tools/CMakeFiles/ozz_animation_tools.dir/import2ozz_skel.cc.o: CXX_COMPILER__ozz_animation_tools_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/tools/import2ozz_skel.cc || cmake_object_order_depends_target_ozz_animation_tools
+build thirdParty/ozz-animation/src/animation/offline/tools/CMakeFiles/ozz_animation_tools.dir/import2ozz_skel.cc.o: CXX_COMPILER__ozz_animation_tools_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/tools/import2ozz_skel.cc || cmake_object_order_depends_target_ozz_animation_tools
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\offline\tools\CMakeFiles\ozz_animation_tools.dir\import2ozz_skel.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/extern/jsoncpp/dist
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\tools\CMakeFiles\ozz_animation_tools.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\offline\tools\CMakeFiles\ozz_animation_tools.dir
 
-build thirdParty/ozz-animation/src/animation/offline/tools/CMakeFiles/ozz_animation_tools.dir/import2ozz_track.cc.o: CXX_COMPILER__ozz_animation_tools_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/tools/import2ozz_track.cc || cmake_object_order_depends_target_ozz_animation_tools
+build thirdParty/ozz-animation/src/animation/offline/tools/CMakeFiles/ozz_animation_tools.dir/import2ozz_track.cc.o: CXX_COMPILER__ozz_animation_tools_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/tools/import2ozz_track.cc || cmake_object_order_depends_target_ozz_animation_tools
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\offline\tools\CMakeFiles\ozz_animation_tools.dir\import2ozz_track.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/extern/jsoncpp/dist
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\tools\CMakeFiles\ozz_animation_tools.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\offline\tools\CMakeFiles\ozz_animation_tools.dir
@@ -1336,15 +1488,16 @@ build thirdParty/ozz-animation/src/animation/offline/tools/CMakeFiles/ozz_animat
 
 
 #############################################
-# Link the static library thirdParty\ozz-animation\src\animation\offline\tools\libozz_animation_tools.a
+# Link the static library thirdParty\ozz-animation\src\animation\offline\tools\libozz_animation_tools_d.a
 
-build thirdParty/ozz-animation/src/animation/offline/tools/libozz_animation_tools.a: CXX_STATIC_LIBRARY_LINKER__ozz_animation_tools_ thirdParty/ozz-animation/src/animation/offline/tools/CMakeFiles/ozz_animation_tools.dir/import2ozz.cc.o thirdParty/ozz-animation/src/animation/offline/tools/CMakeFiles/ozz_animation_tools.dir/import2ozz_anim.cc.o thirdParty/ozz-animation/src/animation/offline/tools/CMakeFiles/ozz_animation_tools.dir/import2ozz_config.cc.o thirdParty/ozz-animation/src/animation/offline/tools/CMakeFiles/ozz_animation_tools.dir/import2ozz_skel.cc.o thirdParty/ozz-animation/src/animation/offline/tools/CMakeFiles/ozz_animation_tools.dir/import2ozz_track.cc.o || thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline.a thirdParty/ozz-animation/src/animation/offline/tools/json/libjson.a thirdParty/ozz-animation/src/animation/runtime/libozz_animation.a thirdParty/ozz-animation/src/base/libozz_base.a thirdParty/ozz-animation/src/options/libozz_options.a
-  LANGUAGE_COMPILE_FLAGS = -Wno-error
+build thirdParty/ozz-animation/src/animation/offline/tools/libozz_animation_tools_d.a: CXX_STATIC_LIBRARY_LINKER__ozz_animation_tools_Debug thirdParty/ozz-animation/src/animation/offline/tools/CMakeFiles/ozz_animation_tools.dir/import2ozz.cc.o thirdParty/ozz-animation/src/animation/offline/tools/CMakeFiles/ozz_animation_tools.dir/import2ozz_anim.cc.o thirdParty/ozz-animation/src/animation/offline/tools/CMakeFiles/ozz_animation_tools.dir/import2ozz_config.cc.o thirdParty/ozz-animation/src/animation/offline/tools/CMakeFiles/ozz_animation_tools.dir/import2ozz_skel.cc.o thirdParty/ozz-animation/src/animation/offline/tools/CMakeFiles/ozz_animation_tools.dir/import2ozz_track.cc.o || thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline_d.a thirdParty/ozz-animation/src/animation/offline/tools/json/libjson_d.a thirdParty/ozz-animation/src/animation/runtime/libozz_animation_d.a thirdParty/ozz-animation/src/base/libozz_base_d.a thirdParty/ozz-animation/src/options/libozz_options_d.a
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -Wno-error -g
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\tools\CMakeFiles\ozz_animation_tools.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = thirdParty\ozz-animation\src\animation\offline\tools\libozz_animation_tools.a
-  TARGET_PDB = ozz_animation_tools.a.dbg
+  TARGET_FILE = thirdParty\ozz-animation\src\animation\offline\tools\libozz_animation_tools_d.a
+  TARGET_PDB = ozz_animation_tools_d.a.dbg
 
 
 #############################################
@@ -1459,9 +1612,10 @@ build thirdParty/ozz-animation/src_fused/ozz_animation_tools.cc | ${cmake_ninja_
 
 build cmake_object_order_depends_target_json: phony || .
 
-build thirdParty/ozz-animation/src/animation/offline/tools/json/CMakeFiles/json.dir/dist/jsoncpp.cpp.o: CXX_COMPILER__json_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/extern/jsoncpp/dist/jsoncpp.cpp || cmake_object_order_depends_target_json
+build thirdParty/ozz-animation/src/animation/offline/tools/json/CMakeFiles/json.dir/dist/jsoncpp.cpp.o: CXX_COMPILER__json_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/extern/jsoncpp/dist/jsoncpp.cpp || cmake_object_order_depends_target_json
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\offline\tools\json\CMakeFiles\json.dir\dist\jsoncpp.cpp.o.d
-  FLAGS = -Wno-error -std=c++17
+  FLAGS = -Wno-error -g -std=c++17
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/extern/jsoncpp/dist
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\tools\json\CMakeFiles\json.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\offline\tools\json\CMakeFiles\json.dir\dist
@@ -1472,15 +1626,16 @@ build thirdParty/ozz-animation/src/animation/offline/tools/json/CMakeFiles/json.
 
 
 #############################################
-# Link the static library thirdParty\ozz-animation\src\animation\offline\tools\json\libjson.a
+# Link the static library thirdParty\ozz-animation\src\animation\offline\tools\json\libjson_d.a
 
-build thirdParty/ozz-animation/src/animation/offline/tools/json/libjson.a: CXX_STATIC_LIBRARY_LINKER__json_ thirdParty/ozz-animation/src/animation/offline/tools/json/CMakeFiles/json.dir/dist/jsoncpp.cpp.o
-  LANGUAGE_COMPILE_FLAGS = -Wno-error
+build thirdParty/ozz-animation/src/animation/offline/tools/json/libjson_d.a: CXX_STATIC_LIBRARY_LINKER__json_Debug thirdParty/ozz-animation/src/animation/offline/tools/json/CMakeFiles/json.dir/dist/jsoncpp.cpp.o
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -Wno-error -g
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\tools\json\CMakeFiles\json.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = thirdParty\ozz-animation\src\animation\offline\tools\json\libjson.a
-  TARGET_PDB = json.a.dbg
+  TARGET_FILE = thirdParty\ozz-animation\src\animation\offline\tools\json\libjson_d.a
+  TARGET_PDB = json_d.a.dbg
 
 
 #############################################
@@ -1657,9 +1812,10 @@ build thirdParty/ozz-animation/src/animation/offline/fbx/install/local: phony th
 
 build cmake_object_order_depends_target_gltf2ozz: phony || cmake_object_order_depends_target_json cmake_object_order_depends_target_ozz_animation cmake_object_order_depends_target_ozz_animation_offline cmake_object_order_depends_target_ozz_animation_tools cmake_object_order_depends_target_ozz_base cmake_object_order_depends_target_ozz_options
 
-build thirdParty/ozz-animation/src/animation/offline/gltf/CMakeFiles/gltf2ozz.dir/gltf2ozz.cc.o: CXX_COMPILER__gltf2ozz_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/gltf/gltf2ozz.cc || cmake_object_order_depends_target_gltf2ozz
+build thirdParty/ozz-animation/src/animation/offline/gltf/CMakeFiles/gltf2ozz.dir/gltf2ozz.cc.o: CXX_COMPILER__gltf2ozz_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/animation/offline/gltf/gltf2ozz.cc || cmake_object_order_depends_target_gltf2ozz
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\animation\offline\gltf\CMakeFiles\gltf2ozz.dir\gltf2ozz.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/extern/jsoncpp/dist
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\gltf\CMakeFiles\gltf2ozz.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\animation\offline\gltf\CMakeFiles\gltf2ozz.dir
@@ -1672,10 +1828,11 @@ build thirdParty/ozz-animation/src/animation/offline/gltf/CMakeFiles/gltf2ozz.di
 #############################################
 # Link the executable thirdParty\ozz-animation\src\animation\offline\gltf\gltf2ozz.html
 
-build thirdParty/ozz-animation/src/animation/offline/gltf/gltf2ozz.html: CXX_EXECUTABLE_LINKER__gltf2ozz_ thirdParty/ozz-animation/src/animation/offline/gltf/CMakeFiles/gltf2ozz.dir/gltf2ozz.cc.o | thirdParty/ozz-animation/src/animation/offline/tools/libozz_animation_tools.a thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline.a thirdParty/ozz-animation/src/animation/runtime/libozz_animation.a thirdParty/ozz-animation/src/options/libozz_options.a thirdParty/ozz-animation/src/base/libozz_base.a thirdParty/ozz-animation/src/animation/offline/tools/json/libjson.a || thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline.a thirdParty/ozz-animation/src/animation/offline/tools/json/libjson.a thirdParty/ozz-animation/src/animation/offline/tools/libozz_animation_tools.a thirdParty/ozz-animation/src/animation/runtime/libozz_animation.a thirdParty/ozz-animation/src/base/libozz_base.a thirdParty/ozz-animation/src/options/libozz_options.a
-  FLAGS = -Wno-error
+build thirdParty/ozz-animation/src/animation/offline/gltf/gltf2ozz.html: CXX_EXECUTABLE_LINKER__gltf2ozz_Debug thirdParty/ozz-animation/src/animation/offline/gltf/CMakeFiles/gltf2ozz.dir/gltf2ozz.cc.o | thirdParty/ozz-animation/src/animation/offline/tools/libozz_animation_tools_d.a thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline_d.a thirdParty/ozz-animation/src/animation/runtime/libozz_animation_d.a thirdParty/ozz-animation/src/options/libozz_options_d.a thirdParty/ozz-animation/src/base/libozz_base_d.a thirdParty/ozz-animation/src/animation/offline/tools/json/libjson_d.a || thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline_d.a thirdParty/ozz-animation/src/animation/offline/tools/json/libjson_d.a thirdParty/ozz-animation/src/animation/offline/tools/libozz_animation_tools_d.a thirdParty/ozz-animation/src/animation/runtime/libozz_animation_d.a thirdParty/ozz-animation/src/base/libozz_base_d.a thirdParty/ozz-animation/src/options/libozz_options_d.a
+  CONFIG = Debug
+  FLAGS = -Wno-error -g
   LINK_FLAGS = -s DISABLE_DEPRECATED_FIND_EVENT_TARGET_BEHAVIOR=0
-  LINK_LIBRARIES = thirdParty/ozz-animation/src/animation/offline/tools/libozz_animation_tools.a  thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline.a  thirdParty/ozz-animation/src/animation/runtime/libozz_animation.a  thirdParty/ozz-animation/src/options/libozz_options.a  thirdParty/ozz-animation/src/base/libozz_base.a  thirdParty/ozz-animation/src/animation/offline/tools/json/libjson.a
+  LINK_LIBRARIES = thirdParty/ozz-animation/src/animation/offline/tools/libozz_animation_tools_d.a  thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline_d.a  thirdParty/ozz-animation/src/animation/runtime/libozz_animation_d.a  thirdParty/ozz-animation/src/options/libozz_options_d.a  thirdParty/ozz-animation/src/base/libozz_base_d.a  thirdParty/ozz-animation/src/animation/offline/tools/json/libjson_d.a
   OBJECT_DIR = thirdParty\ozz-animation\src\animation\offline\gltf\CMakeFiles\gltf2ozz.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -1857,9 +2014,10 @@ build thirdParty/ozz-animation/src/geometry/install/local: phony thirdParty/ozz-
 
 build cmake_object_order_depends_target_ozz_geometry: phony || cmake_object_order_depends_target_ozz_base
 
-build thirdParty/ozz-animation/src/geometry/runtime/CMakeFiles/ozz_geometry.dir/skinning_job.cc.o: CXX_COMPILER__ozz_geometry_unscanned_ D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/geometry/runtime/skinning_job.cc || cmake_object_order_depends_target_ozz_geometry
+build thirdParty/ozz-animation/src/geometry/runtime/CMakeFiles/ozz_geometry.dir/skinning_job.cc.o: CXX_COMPILER__ozz_geometry_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/geometry/runtime/skinning_job.cc || cmake_object_order_depends_target_ozz_geometry
+  CONFIG = Debug
   DEP_FILE = thirdParty\ozz-animation\src\geometry\runtime\CMakeFiles\ozz_geometry.dir\skinning_job.cc.o.d
-  FLAGS = -Wno-error -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
+  FLAGS = -Wno-error -g -std=c++17 -Wall -Werror -Wno-ignored-attributes -Wno-c++98-compat-pedantic
   INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/src/. -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
   OBJECT_DIR = thirdParty\ozz-animation\src\geometry\runtime\CMakeFiles\ozz_geometry.dir
   OBJECT_FILE_DIR = thirdParty\ozz-animation\src\geometry\runtime\CMakeFiles\ozz_geometry.dir
@@ -1870,15 +2028,16 @@ build thirdParty/ozz-animation/src/geometry/runtime/CMakeFiles/ozz_geometry.dir/
 
 
 #############################################
-# Link the static library thirdParty\ozz-animation\src\geometry\runtime\libozz_geometry.a
+# Link the static library thirdParty\ozz-animation\src\geometry\runtime\libozz_geometry_d.a
 
-build thirdParty/ozz-animation/src/geometry/runtime/libozz_geometry.a: CXX_STATIC_LIBRARY_LINKER__ozz_geometry_ thirdParty/ozz-animation/src/geometry/runtime/CMakeFiles/ozz_geometry.dir/skinning_job.cc.o || thirdParty/ozz-animation/src/base/libozz_base.a
-  LANGUAGE_COMPILE_FLAGS = -Wno-error
+build thirdParty/ozz-animation/src/geometry/runtime/libozz_geometry_d.a: CXX_STATIC_LIBRARY_LINKER__ozz_geometry_Debug thirdParty/ozz-animation/src/geometry/runtime/CMakeFiles/ozz_geometry.dir/skinning_job.cc.o || thirdParty/ozz-animation/src/base/libozz_base_d.a
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -Wno-error -g
   OBJECT_DIR = thirdParty\ozz-animation\src\geometry\runtime\CMakeFiles\ozz_geometry.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = thirdParty\ozz-animation\src\geometry\runtime\libozz_geometry.a
-  TARGET_PDB = ozz_geometry.a.dbg
+  TARGET_FILE = thirdParty\ozz-animation\src\geometry\runtime\libozz_geometry_d.a
+  TARGET_PDB = ozz_geometry_d.a.dbg
 
 
 #############################################
@@ -2002,33 +2161,33 @@ build gltf2ozz: phony thirdParty/ozz-animation/src/animation/offline/gltf/gltf2o
 
 build gltf2ozz.html: phony thirdParty/ozz-animation/src/animation/offline/gltf/gltf2ozz.html
 
-build json: phony thirdParty/ozz-animation/src/animation/offline/tools/json/libjson.a
+build json: phony thirdParty/ozz-animation/src/animation/offline/tools/json/libjson_d.a
 
-build libjson.a: phony thirdParty/ozz-animation/src/animation/offline/tools/json/libjson.a
+build libjson_d.a: phony thirdParty/ozz-animation/src/animation/offline/tools/json/libjson_d.a
 
-build libozz_animation.a: phony thirdParty/ozz-animation/src/animation/runtime/libozz_animation.a
+build libozz_animation_d.a: phony thirdParty/ozz-animation/src/animation/runtime/libozz_animation_d.a
 
-build libozz_animation_offline.a: phony thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline.a
+build libozz_animation_offline_d.a: phony thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline_d.a
 
-build libozz_animation_tools.a: phony thirdParty/ozz-animation/src/animation/offline/tools/libozz_animation_tools.a
+build libozz_animation_tools_d.a: phony thirdParty/ozz-animation/src/animation/offline/tools/libozz_animation_tools_d.a
 
-build libozz_base.a: phony thirdParty/ozz-animation/src/base/libozz_base.a
+build libozz_base_d.a: phony thirdParty/ozz-animation/src/base/libozz_base_d.a
 
-build libozz_geometry.a: phony thirdParty/ozz-animation/src/geometry/runtime/libozz_geometry.a
+build libozz_geometry_d.a: phony thirdParty/ozz-animation/src/geometry/runtime/libozz_geometry_d.a
 
-build libozz_options.a: phony thirdParty/ozz-animation/src/options/libozz_options.a
+build libozz_options_d.a: phony thirdParty/ozz-animation/src/options/libozz_options_d.a
 
-build ozz_animation: phony thirdParty/ozz-animation/src/animation/runtime/libozz_animation.a
+build ozz_animation: phony thirdParty/ozz-animation/src/animation/runtime/libozz_animation_d.a
 
-build ozz_animation_offline: phony thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline.a
+build ozz_animation_offline: phony thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline_d.a
 
-build ozz_animation_tools: phony thirdParty/ozz-animation/src/animation/offline/tools/libozz_animation_tools.a
+build ozz_animation_tools: phony thirdParty/ozz-animation/src/animation/offline/tools/libozz_animation_tools_d.a
 
-build ozz_base: phony thirdParty/ozz-animation/src/base/libozz_base.a
+build ozz_base: phony thirdParty/ozz-animation/src/base/libozz_base_d.a
 
-build ozz_geometry: phony thirdParty/ozz-animation/src/geometry/runtime/libozz_geometry.a
+build ozz_geometry: phony thirdParty/ozz-animation/src/geometry/runtime/libozz_geometry_d.a
 
-build ozz_options: phony thirdParty/ozz-animation/src/options/libozz_options.a
+build ozz_options: phony thirdParty/ozz-animation/src/options/libozz_options_d.a
 
 # =============================================================================
 # Folder targets.
@@ -2073,7 +2232,7 @@ build thirdParty/ozz-animation/src/animation/all: phony thirdParty/ozz-animation
 #############################################
 # Folder: D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/thirdParty/ozz-animation/src/animation/offline
 
-build thirdParty/ozz-animation/src/animation/offline/all: phony thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline.a thirdParty/ozz-animation/src/animation/offline/BUILD_FUSE_ozz_animation_offline thirdParty/ozz-animation/src/animation/offline/tools/all thirdParty/ozz-animation/src/animation/offline/fbx/all thirdParty/ozz-animation/src/animation/offline/gltf/all
+build thirdParty/ozz-animation/src/animation/offline/all: phony thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline_d.a thirdParty/ozz-animation/src/animation/offline/BUILD_FUSE_ozz_animation_offline thirdParty/ozz-animation/src/animation/offline/tools/all thirdParty/ozz-animation/src/animation/offline/fbx/all thirdParty/ozz-animation/src/animation/offline/gltf/all
 
 # =============================================================================
 
@@ -2094,28 +2253,28 @@ build thirdParty/ozz-animation/src/animation/offline/gltf/all: phony thirdParty/
 #############################################
 # Folder: D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/thirdParty/ozz-animation/src/animation/offline/tools
 
-build thirdParty/ozz-animation/src/animation/offline/tools/all: phony thirdParty/ozz-animation/src/animation/offline/tools/libozz_animation_tools.a thirdParty/ozz-animation/src/animation/offline/tools/BUILD_FUSE_ozz_animation_tools thirdParty/ozz-animation/src/animation/offline/tools/json/all
+build thirdParty/ozz-animation/src/animation/offline/tools/all: phony thirdParty/ozz-animation/src/animation/offline/tools/libozz_animation_tools_d.a thirdParty/ozz-animation/src/animation/offline/tools/BUILD_FUSE_ozz_animation_tools thirdParty/ozz-animation/src/animation/offline/tools/json/all
 
 # =============================================================================
 
 #############################################
 # Folder: D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/thirdParty/ozz-animation/src/animation/offline/tools/json
 
-build thirdParty/ozz-animation/src/animation/offline/tools/json/all: phony thirdParty/ozz-animation/src/animation/offline/tools/json/libjson.a
+build thirdParty/ozz-animation/src/animation/offline/tools/json/all: phony thirdParty/ozz-animation/src/animation/offline/tools/json/libjson_d.a
 
 # =============================================================================
 
 #############################################
 # Folder: D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/thirdParty/ozz-animation/src/animation/runtime
 
-build thirdParty/ozz-animation/src/animation/runtime/all: phony thirdParty/ozz-animation/src/animation/runtime/libozz_animation.a thirdParty/ozz-animation/src/animation/runtime/BUILD_FUSE_ozz_animation
+build thirdParty/ozz-animation/src/animation/runtime/all: phony thirdParty/ozz-animation/src/animation/runtime/libozz_animation_d.a thirdParty/ozz-animation/src/animation/runtime/BUILD_FUSE_ozz_animation
 
 # =============================================================================
 
 #############################################
 # Folder: D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/thirdParty/ozz-animation/src/base
 
-build thirdParty/ozz-animation/src/base/all: phony thirdParty/ozz-animation/src/base/libozz_base.a thirdParty/ozz-animation/src/base/BUILD_FUSE_ozz_base thirdParty/ozz-animation/src/base/BUILD_FUSE_ALL
+build thirdParty/ozz-animation/src/base/all: phony thirdParty/ozz-animation/src/base/libozz_base_d.a thirdParty/ozz-animation/src/base/BUILD_FUSE_ozz_base thirdParty/ozz-animation/src/base/BUILD_FUSE_ALL
 
 # =============================================================================
 
@@ -2129,14 +2288,14 @@ build thirdParty/ozz-animation/src/geometry/all: phony thirdParty/ozz-animation/
 #############################################
 # Folder: D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/thirdParty/ozz-animation/src/geometry/runtime
 
-build thirdParty/ozz-animation/src/geometry/runtime/all: phony thirdParty/ozz-animation/src/geometry/runtime/libozz_geometry.a thirdParty/ozz-animation/src/geometry/runtime/BUILD_FUSE_ozz_geometry
+build thirdParty/ozz-animation/src/geometry/runtime/all: phony thirdParty/ozz-animation/src/geometry/runtime/libozz_geometry_d.a thirdParty/ozz-animation/src/geometry/runtime/BUILD_FUSE_ozz_geometry
 
 # =============================================================================
 
 #############################################
 # Folder: D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/thirdParty/ozz-animation/src/options
 
-build thirdParty/ozz-animation/src/options/all: phony thirdParty/ozz-animation/src/options/libozz_options.a thirdParty/ozz-animation/src/options/BUILD_FUSE_ozz_options
+build thirdParty/ozz-animation/src/options/all: phony thirdParty/ozz-animation/src/options/libozz_options_d.a thirdParty/ozz-animation/src/options/BUILD_FUSE_ozz_options
 
 # =============================================================================
 # Built-in targets

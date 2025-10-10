@@ -25,7 +25,7 @@ CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=
+CMAKE_BUILD_TYPE:STRING=Debug
 
 //Path to the emulator for the target system.
 CMAKE_CROSSCOMPILING_EMULATOR:FILEPATH=C:/Program Files/nodejs/node.exe

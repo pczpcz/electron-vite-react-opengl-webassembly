@@ -7,6 +7,17 @@
 #include <emscripten.h>
 #include <emscripten/html5.h>
 
+// 封装的渲染类
+#include "vertexarrayobject.h"
+#include "bufferobject.h"
+#include "material.h"
+#include "mesh.h"
+#include "gameobject.h"
+#include "scene.h"
+#include "scenemanager.h"
+#include "renderpass.h"
+#include "renderpipeline.h"
+
 // ozz-animation includes
 #include "ozz/animation/runtime/animation.h"
 #include "ozz/animation/runtime/skeleton.h"
@@ -186,51 +197,7 @@ int main()
     glfwMakeContextCurrent(window);
     setupEvents();
 
-    // build and compile our shader program
-    // ------------------------------------
-    // vertex shader
-    unsigned int vertexShader = glCreateShader(GL_VERTEX_SHADER);
-    glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
-    glCompileShader(vertexShader);
-    // check for shader compile errors
-    int success;
-    char infoLog[512];
-    glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &success);
-    if (!success)
-    {
-        glGetShaderInfoLog(vertexShader, 512, NULL, infoLog);
-        std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n"
-                  << infoLog << std::endl;
-    }
-    // fragment shader
-    unsigned int fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-    glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
-    glCompileShader(fragmentShader);
-    // check for shader compile errors
-    glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &success);
-    if (!success)
-    {
-        glGetShaderInfoLog(fragmentShader, 512, NULL, infoLog);
-        std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n"
-                  << infoLog << std::endl;
-    }
-    // link shaders
-    unsigned int shaderProgram = glCreateProgram();
-    glAttachShader(shaderProgram, vertexShader);
-    glAttachShader(shaderProgram, fragmentShader);
-    glLinkProgram(shaderProgram);
-    // check for linking errors
-    glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
-    if (!success)
-    {
-        glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
-        std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n"
-                  << infoLog << std::endl;
-    }
-    glDeleteShader(vertexShader);
-    glDeleteShader(fragmentShader);
-
-    // set up vertex data (and buffer(s)) and configure vertex attributes
+    // 使用新的渲染架构
     // ------------------------------------------------------------------
     float vertices[] = {
         0.5f, 0.5f, 0.0f,   // top right
@@ -243,31 +210,53 @@ int main()
         0, 1, 3, // first Triangle
         1, 2, 3  // second Triangle
     };
-    unsigned int VBO, VAO, EBO;
-    glGenVertexArrays(1, &VAO);
-    glGenBuffers(1, &VBO);
-    glGenBuffers(1, &EBO);
-    // bind the Vertex Array Object first, then bind and set vertex buffer(s), and then configure vertex attributes(s).
-    glBindVertexArray(VAO);
 
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    // 创建着色器对象 - 从内存源码创建
+    auto shader = std::make_shared<Shader>(vertexShaderSource, fragmentShaderSource, true);
 
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+    // 创建材质
+    auto material = std::make_shared<Material>(shader);
+    // material->setColor("color", 1.0f, 0.5f, 0.2f, 1.0f);
 
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *)0);
-    glEnableVertexAttribArray(0);
+    // 创建网格
+    auto mesh = std::make_shared<Mesh>();
+    mesh->setVertices(vertices, 4, 3 * sizeof(float)); // 4个顶点，每个顶点3个float
+    mesh->setIndices(indices, 6);                      // 6个索引
+    mesh->setMaterial(material);
 
-    // note that this is allowed, the call to glVertexAttribPointer registered VBO as the vertex attribute's bound vertex buffer object so afterwards we can safely unbind
-    glBindBuffer(GL_ARRAY_BUFFER, 0);
+    // 创建游戏对象
+    auto gameObject = std::make_shared<GameObject>("Triangle");
+    gameObject->setPosition(0.0f, 0.0f, 0.0f);
+    gameObject->addMesh(mesh);
 
-    // remember: do NOT unbind the EBO while a VAO is active as the bound element buffer object IS stored in the VAO; keep the EBO bound.
-    // glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
+    // 创建场景并添加游戏对象
+    auto scene = std::make_shared<Scene>("MainScene");
+    scene->addGameObject(gameObject);
 
-    // You can unbind the VAO afterwards so other VAO calls won't accidentally modify this VAO, but this rarely happens. Modifying other
-    // VAOs requires a call to glBindVertexArray anyways so we generally don't unbind VAOs (nor VBOs) when it's not directly necessary.
-    glBindVertexArray(0);
+    // 创建场景管理器并添加场景
+    auto sceneManager = std::make_shared<SceneManager>();
+    sceneManager->addScene("main", scene);
+    sceneManager->initializeCurrentScene();
+
+    // 创建渲染过程
+    auto renderPass = std::make_shared<RenderPass>();
+    renderPass->setClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+    renderPass->setClearMask(GL_COLOR_BUFFER_BIT);
+
+    // 从场景中获取所有游戏对象添加到渲染过程
+    auto currentScene = sceneManager->getCurrentScene();
+    if (currentScene)
+    {
+        auto gameObjects = currentScene->getGameObjects();
+        for (auto &obj : gameObjects)
+        {
+            renderPass->addGameObject(obj);
+        }
+    }
+
+    // 创建渲染管线并添加渲染过程
+    auto renderPipeline = std::make_shared<RenderPipeline>();
+    renderPipeline->addRenderPass("main", renderPass);
 
     // uncomment this call to draw in wireframe polygons.
     // glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
@@ -317,32 +306,16 @@ int main()
 
             // render
             // ------
-            glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-            glClear(GL_COLOR_BUFFER_BIT);
-
-            // draw our first triangle
-            glUseProgram(shaderProgram);
-            glBindVertexArray(VAO); // seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
-            // glDrawArrays(GL_TRIANGLES, 0, 6);
-            glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-            // glBindVertexArray(0); // no need to unbind it every time
+            // 使用渲染管线执行所有渲染过程
+            renderPipeline->render();
 
             // glfw: swap buffers
             // ------------------
             glfwSwapBuffers(window);
         }
     };
-    emscripten_set_main_loop(main_loop, 60, true);
-
-    // optional: de-allocate all resources once they've outlived their purpose:
-    // ------------------------------------------------------------------------
-    glDeleteVertexArrays(1, &VAO);
-    glDeleteBuffers(1, &VBO);
-    glDeleteBuffers(1, &EBO);
-    glDeleteProgram(shaderProgram);
-
-    // glfw: terminate, clearing all previously allocated GLFW resources.
-    // ------------------------------------------------------------------
+    // 使用requestAnimationFrame而不是固定帧率
+    emscripten_set_main_loop(main_loop, 0, true);
     glfwTerminate();
     return 0;
 }

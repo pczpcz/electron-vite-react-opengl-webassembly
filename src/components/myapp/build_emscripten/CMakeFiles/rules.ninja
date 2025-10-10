@@ -7,14 +7,14 @@
 
 # =============================================================================
 # Project: OpenglWebTest
-# Configurations: 
+# Configurations: Debug
 # =============================================================================
 # =============================================================================
 
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__OpenglWebTest_unscanned_
+rule CXX_COMPILER__OpenglWebTest_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}D:\MyGame\build\emsdk\upstream\emscripten\em++.bat $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,7 @@ rule CXX_COMPILER__OpenglWebTest_unscanned_
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__OpenglWebTest_
+rule CXX_EXECUTABLE_LINKER__OpenglWebTest_Debug
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\MyGame\build\emsdk\upstream\emscripten\em++.bat $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -41,7 +41,7 @@ rule CUSTOM_COMMAND
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__ozz_base_unscanned_
+rule CXX_COMPILER__ozz_base_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}D:\MyGame\build\emsdk\upstream\emscripten\em++.bat $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -51,7 +51,7 @@ rule CXX_COMPILER__ozz_base_unscanned_
 #############################################
 # Rule for linking CXX static library.
 
-rule CXX_STATIC_LIBRARY_LINKER__ozz_base_
+rule CXX_STATIC_LIBRARY_LINKER__ozz_base_Debug
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\CMake\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\MyGame\build\emsdk\upstream\emscripten\emar.bat qc $TARGET_FILE $LINK_FLAGS $in && D:\MyGame\build\emsdk\upstream\emscripten\emranlib.bat $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
@@ -60,7 +60,7 @@ rule CXX_STATIC_LIBRARY_LINKER__ozz_base_
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__ozz_options_unscanned_
+rule CXX_COMPILER__ozz_options_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}D:\MyGame\build\emsdk\upstream\emscripten\em++.bat $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -70,7 +70,7 @@ rule CXX_COMPILER__ozz_options_unscanned_
 #############################################
 # Rule for linking CXX static library.
 
-rule CXX_STATIC_LIBRARY_LINKER__ozz_options_
+rule CXX_STATIC_LIBRARY_LINKER__ozz_options_Debug
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\CMake\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\MyGame\build\emsdk\upstream\emscripten\emar.bat qc $TARGET_FILE $LINK_FLAGS $in && D:\MyGame\build\emsdk\upstream\emscripten\emranlib.bat $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
@@ -79,7 +79,7 @@ rule CXX_STATIC_LIBRARY_LINKER__ozz_options_
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__ozz_animation_unscanned_
+rule CXX_COMPILER__ozz_animation_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}D:\MyGame\build\emsdk\upstream\emscripten\em++.bat $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -89,7 +89,7 @@ rule CXX_COMPILER__ozz_animation_unscanned_
 #############################################
 # Rule for linking CXX static library.
 
-rule CXX_STATIC_LIBRARY_LINKER__ozz_animation_
+rule CXX_STATIC_LIBRARY_LINKER__ozz_animation_Debug
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\CMake\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\MyGame\build\emsdk\upstream\emscripten\emar.bat qc $TARGET_FILE $LINK_FLAGS $in && D:\MyGame\build\emsdk\upstream\emscripten\emranlib.bat $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
@@ -98,7 +98,7 @@ rule CXX_STATIC_LIBRARY_LINKER__ozz_animation_
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__ozz_animation_offline_unscanned_
+rule CXX_COMPILER__ozz_animation_offline_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}D:\MyGame\build\emsdk\upstream\emscripten\em++.bat $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -108,7 +108,7 @@ rule CXX_COMPILER__ozz_animation_offline_unscanned_
 #############################################
 # Rule for linking CXX static library.
 
-rule CXX_STATIC_LIBRARY_LINKER__ozz_animation_offline_
+rule CXX_STATIC_LIBRARY_LINKER__ozz_animation_offline_Debug
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\CMake\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\MyGame\build\emsdk\upstream\emscripten\emar.bat qc $TARGET_FILE $LINK_FLAGS $in && D:\MyGame\build\emsdk\upstream\emscripten\emranlib.bat $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
@@ -117,7 +117,7 @@ rule CXX_STATIC_LIBRARY_LINKER__ozz_animation_offline_
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__ozz_animation_tools_unscanned_
+rule CXX_COMPILER__ozz_animation_tools_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}D:\MyGame\build\emsdk\upstream\emscripten\em++.bat $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -127,7 +127,7 @@ rule CXX_COMPILER__ozz_animation_tools_unscanned_
 #############################################
 # Rule for linking CXX static library.
 
-rule CXX_STATIC_LIBRARY_LINKER__ozz_animation_tools_
+rule CXX_STATIC_LIBRARY_LINKER__ozz_animation_tools_Debug
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\CMake\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\MyGame\build\emsdk\upstream\emscripten\emar.bat qc $TARGET_FILE $LINK_FLAGS $in && D:\MyGame\build\emsdk\upstream\emscripten\emranlib.bat $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
@@ -136,7 +136,7 @@ rule CXX_STATIC_LIBRARY_LINKER__ozz_animation_tools_
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__json_unscanned_
+rule CXX_COMPILER__json_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}D:\MyGame\build\emsdk\upstream\emscripten\em++.bat $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -146,7 +146,7 @@ rule CXX_COMPILER__json_unscanned_
 #############################################
 # Rule for linking CXX static library.
 
-rule CXX_STATIC_LIBRARY_LINKER__json_
+rule CXX_STATIC_LIBRARY_LINKER__json_Debug
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\CMake\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\MyGame\build\emsdk\upstream\emscripten\emar.bat qc $TARGET_FILE $LINK_FLAGS $in && D:\MyGame\build\emsdk\upstream\emscripten\emranlib.bat $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
@@ -155,7 +155,7 @@ rule CXX_STATIC_LIBRARY_LINKER__json_
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__gltf2ozz_unscanned_
+rule CXX_COMPILER__gltf2ozz_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}D:\MyGame\build\emsdk\upstream\emscripten\em++.bat $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -165,7 +165,7 @@ rule CXX_COMPILER__gltf2ozz_unscanned_
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__gltf2ozz_
+rule CXX_EXECUTABLE_LINKER__gltf2ozz_Debug
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\MyGame\build\emsdk\upstream\emscripten\em++.bat $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -174,7 +174,7 @@ rule CXX_EXECUTABLE_LINKER__gltf2ozz_
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__ozz_geometry_unscanned_
+rule CXX_COMPILER__ozz_geometry_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}D:\MyGame\build\emsdk\upstream\emscripten\em++.bat $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -184,7 +184,7 @@ rule CXX_COMPILER__ozz_geometry_unscanned_
 #############################################
 # Rule for linking CXX static library.
 
-rule CXX_STATIC_LIBRARY_LINKER__ozz_geometry_
+rule CXX_STATIC_LIBRARY_LINKER__ozz_geometry_Debug
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\CMake\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\MyGame\build\emsdk\upstream\emscripten\emar.bat qc $TARGET_FILE $LINK_FLAGS $in && D:\MyGame\build\emsdk\upstream\emscripten\emranlib.bat $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT

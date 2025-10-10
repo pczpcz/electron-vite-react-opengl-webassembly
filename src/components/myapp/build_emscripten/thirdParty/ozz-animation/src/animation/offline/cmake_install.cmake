@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -38,11 +38,11 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline_d.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+  include("D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/thirdParty/ozz-animation/src/animation/offline/CMakeFiles/ozz_animation_offline.dir/install-cxx-module-bmi-Debug.cmake" OPTIONAL)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
