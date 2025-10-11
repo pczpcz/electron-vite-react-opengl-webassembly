@@ -1,0 +1,21 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten_debug/cmake_install.cmake",
+		"D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten_debug/thirdParty/cmake_install.cmake",
+		"D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten_debug/thirdParty/ozz-animation/cmake_install.cmake",
+		"D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten_debug/thirdParty/ozz-animation/src/cmake_install.cmake",
+		"D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten_debug/thirdParty/ozz-animation/src/base/cmake_install.cmake",
+		"D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten_debug/thirdParty/ozz-animation/src/options/cmake_install.cmake",
+		"D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten_debug/thirdParty/ozz-animation/src/animation/cmake_install.cmake",
+		"D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten_debug/thirdParty/ozz-animation/src/animation/runtime/cmake_install.cmake",
+		"D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten_debug/thirdParty/ozz-animation/src/animation/offline/cmake_install.cmake",
+		"D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten_debug/thirdParty/ozz-animation/src/animation/offline/tools/cmake_install.cmake",
+		"D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten_debug/thirdParty/ozz-animation/src/animation/offline/tools/json/cmake_install.cmake",
+		"D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten_debug/thirdParty/ozz-animation/src/animation/offline/fbx/cmake_install.cmake",
+		"D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten_debug/thirdParty/ozz-animation/src/animation/offline/gltf/cmake_install.cmake",
+		"D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten_debug/thirdParty/ozz-animation/src/geometry/cmake_install.cmake",
+		"D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten_debug/thirdParty/ozz-animation/src/geometry/runtime/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

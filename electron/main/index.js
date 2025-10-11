@@ -51,11 +51,11 @@ function createWindow() {
     webPreferences: {
       preload,
       // Warning: Enable nodeIntegration and disable contextIsolation is not secure in production
-      // nodeIntegration: true,
+      nodeIntegration: true,
 
       // Consider using contextBridge.exposeInMainWorld
       // Read more on https://www.electronjs.org/docs/latest/tutorial/context-isolation
-      // contextIsolation: false,
+      contextIsolation: false,
     },
   });
 
@@ -82,6 +82,12 @@ function createWindow() {
   win.webContents.on('console-message', (event, level, message, line, sourceId) => {
     console.log(`[渲染进程] ${message}`);
   });
+
+  const Module = require('../../public/OpenglWebTest.js');
+  Module.onRuntimeInitialized = function() {
+    // 在这里安全地调用C/C++导出的函数
+    console.log(Module._your_exported_function());
+  };
 }
 
 // 新的IPC通信处理 - 从渲染进程接收状态更新

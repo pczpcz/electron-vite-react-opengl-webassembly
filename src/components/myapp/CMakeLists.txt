@@ -48,6 +48,7 @@ if(EMSCRIPTEN)
         cpp/renderpass.cpp
         cpp/rendercommand.cpp
         cpp/renderpipeline.cpp
+        cpp/ozz_animation.cpp
     )
     
     # 链接第三方库
@@ -58,6 +59,13 @@ if(EMSCRIPTEN)
         "-s WASM=1"
         "-s USE_WEBGL2=1"
         "-s USE_GLFW=3"
+        "-s WASM_ASYNC_COMPILATION=0"
+        "-s EXIT_RUNTIME=1"
+        "-s FORCE_FILESYSTEM=1"
+        "-s NODERAWFS=1"
+        "-lnodefs.js"
+        # 导出必要的运行时方法
+        #"-s EXPORTED_RUNTIME_METHODS=['UTF8ToString','stringToUTF8','lengthBytesUTF8','allocate','ALLOC_NORMAL']"
         # 输出到public目录，确保Vite可以访问
         "-o ${CMAKE_CURRENT_SOURCE_DIR}/public/OpenglWebTest.html"
     )

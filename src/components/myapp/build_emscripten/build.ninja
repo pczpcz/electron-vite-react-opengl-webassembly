@@ -153,6 +153,14 @@ build CMakeFiles/OpenglWebTest.dir/cpp/renderpipeline.cpp.o: CXX_COMPILER__Openg
   OBJECT_DIR = CMakeFiles\OpenglWebTest.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenglWebTest.dir\cpp
 
+build CMakeFiles/OpenglWebTest.dir/cpp/ozz_animation.cpp.o: CXX_COMPILER__OpenglWebTest_unscanned_Debug D$:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp/ozz_animation.cpp || cmake_object_order_depends_target_OpenglWebTest
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\OpenglWebTest.dir\cpp\ozz_animation.cpp.o.d
+  FLAGS = -std=c++11 -O0 -g -s USE_WEBGL2=1 -s USE_GLFW=3 -g -std=gnu++17
+  INCLUDES = -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/cpp -ID:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/thirdParty/ozz-animation/include
+  OBJECT_DIR = CMakeFiles\OpenglWebTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenglWebTest.dir\cpp
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target OpenglWebTest
@@ -161,10 +169,10 @@ build CMakeFiles/OpenglWebTest.dir/cpp/renderpipeline.cpp.o: CXX_COMPILER__Openg
 #############################################
 # Link the executable OpenglWebTest.html
 
-build OpenglWebTest.html: CXX_EXECUTABLE_LINKER__OpenglWebTest_Debug CMakeFiles/OpenglWebTest.dir/cpp/main.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/Shader.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/vertexarrayobject.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/bufferobject.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/material.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/texture.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/mesh.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/gameobject.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/scene.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/scenemanager.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/renderpass.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/rendercommand.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/renderpipeline.cpp.o | thirdParty/ozz-animation/src/animation/runtime/libozz_animation_d.a thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline_d.a thirdParty/ozz-animation/src/base/libozz_base_d.a thirdParty/ozz-animation/src/options/libozz_options_d.a thirdParty/ozz-animation/src/geometry/runtime/libozz_geometry_d.a thirdParty/ozz-animation/src/animation/runtime/libozz_animation_d.a thirdParty/ozz-animation/src/base/libozz_base_d.a || thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline_d.a thirdParty/ozz-animation/src/animation/runtime/libozz_animation_d.a thirdParty/ozz-animation/src/base/libozz_base_d.a thirdParty/ozz-animation/src/geometry/runtime/libozz_geometry_d.a thirdParty/ozz-animation/src/options/libozz_options_d.a
+build OpenglWebTest.html: CXX_EXECUTABLE_LINKER__OpenglWebTest_Debug CMakeFiles/OpenglWebTest.dir/cpp/main.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/Shader.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/vertexarrayobject.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/bufferobject.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/material.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/texture.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/mesh.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/gameobject.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/scene.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/scenemanager.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/renderpass.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/rendercommand.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/renderpipeline.cpp.o CMakeFiles/OpenglWebTest.dir/cpp/ozz_animation.cpp.o | thirdParty/ozz-animation/src/animation/runtime/libozz_animation_d.a thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline_d.a thirdParty/ozz-animation/src/base/libozz_base_d.a thirdParty/ozz-animation/src/options/libozz_options_d.a thirdParty/ozz-animation/src/geometry/runtime/libozz_geometry_d.a thirdParty/ozz-animation/src/animation/runtime/libozz_animation_d.a thirdParty/ozz-animation/src/base/libozz_base_d.a || thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline_d.a thirdParty/ozz-animation/src/animation/runtime/libozz_animation_d.a thirdParty/ozz-animation/src/base/libozz_base_d.a thirdParty/ozz-animation/src/geometry/runtime/libozz_geometry_d.a thirdParty/ozz-animation/src/options/libozz_options_d.a
   CONFIG = Debug
   FLAGS = -std=c++11 -O0 -g -s USE_WEBGL2=1 -s USE_GLFW=3 -g
-  LINK_FLAGS = "-s WASM=1" "-s USE_WEBGL2=1" "-s USE_GLFW=3" "-o D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/public/OpenglWebTest.html"
+  LINK_FLAGS = "-s WASM=1" "-s USE_WEBGL2=1" "-s USE_GLFW=3" "-s WASM_ASYNC_COMPILATION=0" "-s EXIT_RUNTIME=1" "-s FORCE_FILESYSTEM=1" "-s NODERAWFS=1" -lnodefs.js "-o D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/public/OpenglWebTest.html"
   LINK_LIBRARIES = thirdParty/ozz-animation/src/animation/runtime/libozz_animation_d.a  thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline_d.a  thirdParty/ozz-animation/src/base/libozz_base_d.a  thirdParty/ozz-animation/src/options/libozz_options_d.a  thirdParty/ozz-animation/src/geometry/runtime/libozz_geometry_d.a  thirdParty/ozz-animation/src/animation/runtime/libozz_animation_d.a  thirdParty/ozz-animation/src/base/libozz_base_d.a
   OBJECT_DIR = CMakeFiles\OpenglWebTest.dir
   POST_BUILD = cd .

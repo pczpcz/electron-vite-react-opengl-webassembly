@@ -1,5 +1,8 @@
 #include <functional>
 #include <iostream>
+#include <vector>
+#include <fstream>
+#include <filesystem>
 
 #define GLFW_INCLUDE_ES3
 #include <GLFW/glfw3.h>
@@ -18,15 +21,8 @@
 #include "renderpass.h"
 #include "renderpipeline.h"
 
-// ozz-animation includes
-#include "ozz/animation/runtime/animation.h"
-#include "ozz/animation/runtime/skeleton.h"
-#include "ozz/animation/runtime/sampling_job.h"
-#include "ozz/animation/runtime/local_to_model_job.h"
-#include "ozz/base/maths/soa_transform.h"
-#include "ozz/base/maths/vec_float.h"
-#include "ozz/base/io/stream.h"
-#include "ozz/base/io/archive.h"
+// 新的 ozz 动画接口
+#include "ozz_animation.h"
 
 // define GL_GLEXT_PROTOTYPES 1
 // #include <GLES3/gl3.h>
@@ -155,6 +151,10 @@ void main_loop() { frame(); }
  * 主函数 - OpenGL应用程序的入口点
  * 初始化GLFW，创建窗口，编译着色器，设置顶点数据，并进入渲染循环
  */
+/**
+ * 主函数 - OpenGL应用程序入口点
+ * 包含窗口初始化、动画系统设置、渲染管线配置等核心功能
+ */
 int main()
 {
     // glfw: initialize and configure
@@ -178,8 +178,6 @@ int main()
 #ifdef __APPLE__
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
-
-    ozz::animation::Animation anima;
 
     double w, h;
     emscripten_get_element_css_size("#canvas", &w, &h);
