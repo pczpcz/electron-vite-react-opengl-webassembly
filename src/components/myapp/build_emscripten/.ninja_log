@@ -52,7 +52,7 @@
 5877	10449	7818854607337607	thirdParty/ozz-animation/src/animation/offline/tools/CMakeFiles/ozz_animation_tools.dir/import2ozz_anim.cc.o	917fffcbe777ab76
 9548	10804	7818854644051820	thirdParty/ozz-animation/src/animation/offline/libozz_animation_offline_d.a	ddbb03d5b326f586
 5088	10820	7818854599435886	thirdParty/ozz-animation/src/animation/offline/tools/json/CMakeFiles/json.dir/dist/jsoncpp.cpp.o	bd4022f3409069ba
-22	2359	7818914721261084	CMakeFiles/OpenglWebTest.dir/cpp/main.cpp.o	cacf083611d4d61e
+27	1919	7828442320127673	CMakeFiles/OpenglWebTest.dir/cpp/main.cpp.o	cacf083611d4d61e
 6213	10955	7818854610696044	thirdParty/ozz-animation/src/animation/offline/tools/CMakeFiles/ozz_animation_tools.dir/import2ozz_track.cc.o	35a16f40be305337
 21	155	7818856822488226	thirdParty/ozz-animation/src_fused/ozz_base.cc	92075a6d9b51d6e3
 10956	11344	7818854661310873	D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten_debug/thirdParty/ozz-animation/src_fused/ozz_base.cc	963edd0da54d9305
@@ -76,10 +76,10 @@
 8407	13085	7818854632718611	CMakeFiles/OpenglWebTest.dir/cpp/material.cpp.o	7a810e53ddd8f35d
 9706	13422	7818854645625370	CMakeFiles/OpenglWebTest.dir/cpp/scene.cpp.o	54e0081ae3b6036b
 10018	13511	7818854648748989	CMakeFiles/OpenglWebTest.dir/cpp/renderpass.cpp.o	51dd3f953ce6e23a
-9943	13596	7818854647991662	CMakeFiles/OpenglWebTest.dir/cpp/scenemanager.cpp.o	21f813f669667117
+27	2926	7828438249214767	CMakeFiles/OpenglWebTest.dir/cpp/scenemanager.cpp.o	21f813f669667117
 26	2039	7818914721311144	CMakeFiles/OpenglWebTest.dir/cpp/ozz_animation.cpp.o	f061a544eec36710
 10317	13720	7818854651728246	CMakeFiles/OpenglWebTest.dir/cpp/renderpipeline.cpp.o	7fc4a6e63de36016
-20	793	7818926428427680	OpenglWebTest.html	7d55f35c64dccb85
+1920	2799	7828442339055507	OpenglWebTest.html	8d31523519020ecc
 10809	18310	7818854656656954	thirdParty/ozz-animation/src/animation/offline/gltf/CMakeFiles/gltf2ozz.dir/gltf2ozz.cc.o	c420922d30052523
 18310	19135	7818854731670789	thirdParty/ozz-animation/src/animation/offline/gltf/gltf2ozz.html	7764bb7bd00f7fd8
 27	87	7818856821795917	D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/thirdParty/ozz-animation/src_fused/ozz_options.cc	985f2e6110553525
@@ -88,4 +88,3 @@
 39	146	7818856822382269	D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/thirdParty/ozz-animation/src_fused/ozz_animation_tools.cc	9aaff6315343b2de
 34	147	7818856822392300	D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/thirdParty/ozz-animation/src_fused/ozz_animation_offline.cc	e24ac0713a5b99aa
 21	155	7818856822488226	D:/workspace/MyWebGame/electron-vite-react-opengl-webassembly/src/components/myapp/build_emscripten/thirdParty/ozz-animation/src_fused/ozz_base.cc	92075a6d9b51d6e3
-19	780	7818928493781018	OpenglWebTest.html	8d31523519020ecc

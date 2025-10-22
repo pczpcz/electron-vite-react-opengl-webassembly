@@ -19,6 +19,10 @@ window.electronAPI = {
   onMessage: (callback) => 
     ipcRenderer.on('message', callback),
   
+  // 监听UDP命令
+  onUDPCommand: (callback) => 
+    ipcRenderer.on('udp-command', callback),
+  
   // 移除监听器
   removeAllListeners: (channel) => 
     ipcRenderer.removeAllListeners(channel),
@@ -63,7 +67,15 @@ window.electronAPI = {
   // 获取项目根目录
   getProjectRoot: () => {
     return process.cwd();
-  }
+  },
+  
+  // 发送鼠标键盘事件到主进程
+  sendInputEvent: (eventData) => 
+    ipcRenderer.invoke('renderer-input-event', eventData),
+  
+  // 监听UDP状态更新
+  onUDPStatus: (callback) => 
+    ipcRenderer.on('udp-status', callback)
 };
 
 // 由于 nodeIntegration: true，渲染进程也可以直接访问 Node.js API

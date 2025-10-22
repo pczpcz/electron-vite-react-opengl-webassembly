@@ -33,73 +33,73 @@
 
 EM_BOOL onKeyPress(int eventType, const EmscriptenKeyboardEvent *keyEvent, void *userData)
 {
-    std::cerr << __FUNCTION__ << std::endl;
+    // std::cerr << __FUNCTION__ << std::endl;
     return EM_TRUE;
 }
 
 EM_BOOL onKeyDown(int eventType, const EmscriptenKeyboardEvent *keyEvent, void *userData)
 {
-    std::cerr << __FUNCTION__ << std::endl;
+    // std::cerr << __FUNCTION__ << std::endl;
     return EM_TRUE;
 }
 
 EM_BOOL onKeyUp(int eventType, const EmscriptenKeyboardEvent *keyEvent, void *userData)
 {
-    std::cerr << __FUNCTION__ << std::endl;
+    // std::cerr << __FUNCTION__ << std::endl;
     return EM_TRUE;
 }
 
 EM_BOOL onMouseMove(int eventType, const EmscriptenMouseEvent *mouseEvent, void *userData)
 {
-    std::cerr << __FUNCTION__ << std::endl;
+    // std::cerr << __FUNCTION__ << std::endl;
     return EM_TRUE;
 }
 
 EM_BOOL onMouseUp(int eventType, const EmscriptenMouseEvent *mouseEvent, void *userData)
 {
-    std::cerr << __FUNCTION__ << std::endl;
+    // std::cerr << __FUNCTION__ << std::endl;
     return EM_TRUE;
 }
 
 EM_BOOL onMouseDown(int eventType, const EmscriptenMouseEvent *mouseEvent, void *userData)
 {
-    std::cerr << __FUNCTION__ << std::endl;
+    // std::cerr << __FUNCTION__ << std::endl;
     return EM_TRUE;
 }
 
 EM_BOOL onMouseEnter(int eventType, const EmscriptenMouseEvent *mouseEvent, void *userData)
 {
-    std::cerr << __FUNCTION__ << std::endl;
+    // std::cerr << __FUNCTION__ << std::endl;
     return EM_TRUE;
 }
 
 EM_BOOL onMouseLeave(int eventType, const EmscriptenMouseEvent *mouseEvent, void *userData)
 {
-    std::cerr << __FUNCTION__ << std::endl;
+    // std::cerr << __FUNCTION__ << std::endl;
     return EM_TRUE;
 }
 
 EM_BOOL onTouchStart(int eventType, const EmscriptenTouchEvent *touchEvent, void *userData)
 {
-    std::cerr << __FUNCTION__ << std::endl;
+    // std::cerr << __FUNCTION__ << std::endl;
     return EM_TRUE;
 }
 
 EM_BOOL onTouchEnd(int eventType, const EmscriptenTouchEvent *touchEvent, void *userData)
 {
-    std::cerr << __FUNCTION__ << std::endl;
+    // std::cerr << __FUNCTION__ << std::endl;
     return EM_TRUE;
 }
 
 EM_BOOL onTouchMove(int eventType, const EmscriptenTouchEvent *touchEvent, void *userData)
 {
-    std::cerr << __FUNCTION__ << std::endl;
+    // std::cerr << __FUNCTION__ << std::endl;
     return EM_TRUE;
 }
 
 EM_BOOL onTouchCancel(int eventType, const EmscriptenTouchEvent *touchEvent, void *userData)
 {
-    std::cerr << __FUNCTION__ << std::endl;
+    // std::cerr << __FUNCTION__ << std::endl;
     return EM_TRUE;
 }
 
